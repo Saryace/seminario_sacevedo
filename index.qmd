@@ -1,0 +1,311 @@
+---
+title: Seminario
+subtitle: Disentangling the soil and water relationship
+format: clean-revealjs
+df-print: paged
+author:
+  - name: Dra. Sara E. Acevedo
+    orcid: 0000-0003-3203-2106
+    email: seaceved@uc.cl
+    affiliations: Pontificia Universidad Católica de Chile - CEDEUS
+date: "11 Octubre 2023"
+bibliography: references.bib
+footer: saryace.github.io/seminario_sacevedo
+---
+
+## Acerca de mi 👩🏽‍💻
+::::: {.columns style="text-align:center;margin-top:50px;"}
+
+:::: {.column width="50%" style="margin-top:50px"}
+::: {.r-stack}
+![](images/primera.png){.fragment .fade-in-then-semi-out fragment-index=1 style="width:70%;transform:rotate(-5deg);" fig-alt="yo shikita"}
+
+![](images/segunda.jpeg){.fragment .fade-in-then-semi-out fragment-index=2 style="transform:rotate(5deg);" fig-alt="museo del suelo"}
+
+![](images/tercera.png){.fragment .fade-in-then-semi-out fragment-index=3 style="transform:rotate(-1deg);" fig-alt="muestreando"}
+
+![](images/cuarta.jpeg){.fragment .fade-in-then-semi-out fragment-index=4 style="transform:rotate(1.5deg);" fig-alt="ultima clase biofisica"}
+
+![](images/quinta.jpeg){.fragment .fade-in fragment-index=5 style="transform:rotate(-3.5deg);" fig-alt="Chicago posit"}
+:::
+::::
+
+:::: {.column width="50%"  style="margin-top:25px"}
+::: {.fragment fragment-index=1}
+Química mención Analítica y Ambiental **[PUC](https://quimica.uc.cl/)**
+:::
+::: {.fragment fragment-index=2}
+
+Master en Suelos y Biogeoquímica **[UC-Davis](https://www.ucdavis.edu/graduate-programs/soils-and-biogeochemistry)** y Doctora en Ciencias de la Ingeniería  **[PUC](https://www.ing.uc.cl/hidraulica-y-ambiental/)**
+:::
+::: {.fragment fragment-index=6}
+
+Ahora trabajando como postdoc en **[CEDEUS](https://www.cedeus.cl/pd-sara-acevedo/)**
+
+[![](images/cedeus.jpeg){style="width:15%;"}](https://www.cedeus.cl)
+:::
+::::
+
+:::::
+
+# Mis líneas de investigación {background-color="#40666e"}
+
+# [Desenredar la relación suelo-agua]{.r-fit-text} {background-image="images/agua_suelo.jpeg" background-size="100%" background-opacity="0.5"}
+
+# Mis líneas de investigación {background-color="#40666e"}
+
+::: {.incremental}
+
+-   Física de suelos
+-   Suelos urbanos
+-   Análisis de datos
+
+:::
+
+## Física de suelos {background-image="images/building.png" background-size="55%"}
+### Enfoque conceptual ^[[Acevedo et al., 2022. How does building healthy soils impact sustainable use of water resources in irrigated agriculture?](https://doi.org/10.1525/elementa.2022.00043)]
+
+## Física de suelos 
+### Enfoque conceptual ^[[Acevedo et al., 2022. How does building healthy soils impact sustainable use of water resources in irrigated agriculture?](https://doi.org/10.1525/elementa.2022.00043)]
+
+::: {.fragment .fade-up}
+-   Desafío multidisciplinario
+:::
+::: {.fragment .fade-up}
+-   Empujar términos como "eco-funcionalidad" para describir el rol de la MO en los servicios del ecosistémicos
+::: 
+::: {.fragment .fade-up}
+-   Los suelos sanos puede repercutir en el uso sostenible de los recursos hídricos
+::: 
+
+## Física de suelos {background-image="images/pario.jpeg" background-size="55%"}
+### Experimental ^[[Acevedo et al., 2021. Testing the integral suspension pressure method for soil particle size analysis across a range of soil organic matter contents](https://doi.org/10.31545/intagr/144387)]
+
+## Física de suelos 
+### Experimental ^[[Acevedo et al., 2021. Testing the integral suspension pressure method for soil particle size analysis across a range of soil organic matter contents](https://doi.org/10.31545/intagr/144387)]
+
+::: {.fragment .fade-up}
+-   Nuevas tecnologias para la descripción de las propiedades físicas del suelo deben ser evaluadas
+:::
+::: {.fragment .fade-up}
+-   Aumento del volumen de datos debe ir de la mano con herramientas de análisis de datos
+::: 
+::: {.fragment .fade-up}
+-   Necesidad de archivos de suelo
+::: 
+
+## Física de suelos {background-image="images/incendios.jpeg" background-size="55%"}
+### Sus efectos en el medioambiente ^[[Acevedo et al., 2023. Effect of data availability and pedotransfer estimates on water flow modelling in wildfire-affected soils](https://doi.org/10.1016/j.jhydrol.2022.128919)]
+
+## Física de suelos 
+### Sus efectos en el medioambiente ^[[Acevedo et al., 2023. Effect of data availability and pedotransfer estimates on water flow modelling in wildfire-affected soils](https://doi.org/10.1016/j.jhydrol.2022.128919)]
+
+::: {.fragment .fade-up}
+-   Cambio clímatico como driver en cambios de la física del suelo
+:::
+::: {.fragment .fade-up}
+-   Urgencia de estudios pirohidrologícos
+::: 
+::: {.fragment .fade-up}
+-   Técnicas analíticas especializadas
+::: 
+::: {.fragment .fade-up}
+-   Colaboración en manuscritos enviados a Geoderma 
+::: 
+
+## Suelos urbanos {background-image="images/urban_concept.png" background-size="30%"}
+### Urbanización - Requerimientos hídricos - Salud del suelo ^[Postulación Postdoctorado ANID 2024]
+
+## Suelos urbanos 
+### Urbanización - Requerimientos hídricos - Salud del suelo ^[Postulación Postdoctorado ANID 2024]
+
+::: {.fragment .fade-up}
+-   Suelos homogéneos en contextos heterogéneos
+:::
+::: {.fragment .fade-up}
+-   Urbanización es un driver en la pedogénesis de suelos urbanos
+::: 
+::: {.fragment .fade-up}
+-   Suelos sanos potencialmente amortiguan el requerimiento hídrico 
+::: 
+
+## Suelos urbanos {background-image="images/plazas.jpeg" background-size="50%"}
+### Salud del suelo - Metales pesados^[[Vega et al., 2022. A comparative study of soil metal concentrations in Chilean urban parks using four pollution indexes](https://doi.org/10.1016/j.apgeochem.2022.105230)]
+
+## Suelos urbanos 
+### Salud del suelo - Metales pesados^[[Vega et al., 2022. A comparative study of soil metal concentrations in Chilean urban parks using four pollution indexes](https://doi.org/10.1016/j.apgeochem.2022.105230)]
+
+::: {.fragment .fade-up}
+-   Conexión con contaminación ambiental y biodisponibilidad de metales
+:::
+::: {.fragment .fade-up}
+-   Urbanización como driver de contaminación
+::: 
+::: {.fragment .fade-up}
+-   Relevancia de contar con información detallada en el contexto urbano
+::: 
+
+::: {.fragment .fade-up}
+-   Trabajo desarrollado en CEDEUS
+::: 
+## Suelos urbanos {background-image="images/infiltrometro.jpeg" background-size="25%"}
+### Infiltración en parques urbanos 
+
+## Suelos urbanos 
+### Infiltración en parques urbanos 
+
+::: {.fragment .fade-up}
+-   Análisis de infiltración para caracterizar el impacto de áreas verdes en el ciclo hidrológico
+:::
+::: {.fragment .fade-up}
+-   Métricas sencillas y rápidas para abarcar áreas importantes
+::: 
+::: {.fragment .fade-up}
+-   Cuantificar ordenes de margitud permitirá desarrollar hipótesis del rol en el ciclo hidrológico
+::: 
+
+#
+Proyecto Postdoctorado IngenieríaUC
+```{r}
+library(sf)
+library(janitor)
+library(tidyverse)
+
+# https://ideocuc-ocuc.hub.arcgis.com/search?collection=Dataset
+# datos enero 2020
+datos_urbanos <- read_sf("datos/sup_areas_verdes_stgo.geojson")
+
+areas_verdes <- 
+datos_urbanos %>%
+  as_tibble() %>%
+  mutate(clase = case_when(str_detect(clase, "PARQUE") ~ "PARQUE",
+                           .default = clase)) %>%
+  group_by(clase, estado_2) %>% 
+  summarise(area = sum(area_m2))%>% 
+  ungroup() 
+
+areas_verdes %>% 
+  mutate(estado = case_match(estado_2,
+      "BUEN" ~ "Buen estado",
+      "MAL" ~ "Mal estado")) %>% 
+  group_by(clase) %>% 
+  mutate(area_p = round(area * 100 / sum(area), 2)) %>% 
+  mutate(clase = paste(clase,estado)) %>% 
+  select(-estado, -estado_2, clase, area_p, area)
+
+```
+# 
+
+```{r}
+library(sf)
+library(mapview)
+mapa_areas_verdes <- read_sf("datos/sup_areas_verdes_stgo.geojson")
+
+ggplot(mapa_areas_verdes %>% 
+       mutate(estado = case_match(estado_2,
+      "BUEN" ~ "Buen estado",
+      "MAL" ~ "Mal estado")) ) + 
+  geom_sf(aes(fill = estado)) +
+  scale_fill_manual(values = c("green", "red")) +
+  labs(fill=NULL) +
+  theme_void()
+```
+
+## Análisis de datos^[[The Turing Way project illustration by Scriberia](10.5281/zenodo.3332807)] {background-image="https://the-turing-way.netlify.app/_images/reproducibility.jpg" background-size="50%"}
+
+## Análisis de datos
+
+### Reproducibilidad en ciencias del suelo
+
+::: {.fragment .fade-up}
+-   El reto de lograr la reproducibilidad persiste en las ciencia del suelo [@CORRENDO2023101275]
+:::
+::: {.fragment .fade-up}
+-   Agencias de financiamiento exigen aumentar la transparencia y la reproducibilidad  [@BondLamberty2016]
+::: 
+::: {.fragment .fade-up}
+-   Investigación abierta, accesible, reutilizable y reproducible puede tener un impacto positivo significativo en la comunidad científica [@Hall2022]
+::: 
+
+
+## Análisis de datos
+### Reproducibilidad en ciencias del suelo
+
+:::: {.columns}
+
+::: {.column width="30%"}
+![](images/hexsticker.jpeg)
+:::
+
+::: {.column width="70%"}
+
+::: {.fragment .fade-up}
+-   Un paquete de R (infiltrodiscR) que contiene funciones de R compatibles con el  análisis de datos de infiltración
+::: 
+
+::: {.fragment .fade-up}
+-   Manuscrito enviado a [SoftwareX](https://www.sciencedirect.com/journal/softwarex) 
+::: 
+:::
+
+::::
+
+# Interdisciplina y colaboración {background-color="#40666e"}
+
+##
+
+```{r}
+library(scholar)
+library(tidyverse)
+library(tidytext)
+library(ggwordcloud)
+library(gtExtras)
+
+gs_id <- "WJqqnIQAAAAJ&hl"
+
+pubs <- get_publications(gs_id)
+
+data_pubs_titles <-
+pubs %>% 
+  select(title) %>% 
+  unnest_tokens(word, title) %>% 
+  anti_join(get_stopwords()) %>% 
+  anti_join(get_stopwords(lan = "es")) %>% 
+  count(word, sort = TRUE)  
+
+ggplot(data = data_pubs_titles, 
+       aes(label = word, size = n, col = as.character(n))) + 
+  geom_text_wordcloud(rm_outside = TRUE, max_steps = 1,
+                      grid_size = 1, eccentricity = .9)+
+  scale_size_area(max_size = 14)+
+  scale_color_brewer(palette = "Paired", direction = -1)+
+  theme_void() 
+```
+
+## Interdisciplina y colaboración
+### Concreta
+::: {.fragment .fade-up}
+-   Departamento de Ingeniería Hidráulica y Ambiental UC
+:::
+::: {.fragment .fade-up}
+-   Departamento de Salud Pública UC
+::: 
+::: {.fragment .fade-up}
+-   Crop and Soil Sciences OSU
+::: 
+### Potencial
+::: {.fragment .fade-up}
+-   Interesados en integrar open-science principles
+:::
+::: {.fragment .fade-up}
+-   Percepción remota
+::: 
+
+## Preguntas?? 👩🏽‍💻
+
+-   Mapas y tablas fueron creados en R
+-   Puedes ver el código con que creé esta presentación [aquí](https://www.github.com/Saryace/seminario_seacevedo)
+-   O puedes escanear este QR {{< qrcode https://www.github.com/Saryace/seminario_seacevedo >}}
+
+## References
+
