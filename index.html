@@ -12,7 +12,7 @@
   <meta name="generator" content="quarto-1.3.450">
 
   <meta name="author" content="Dra. Sara E. Acevedo">
-  <meta name="dcterms.date" content="2023-10-11">
+  <meta name="dcterms.date" content="2023-11-10">
   <title>Seminario</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -341,8 +341,19 @@
     }
   </style>
   
-  <link href="index_files/libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet">
-  <script src="index_files/libs/pagedtable-1.1/js/pagedtable.js"></script>
+  <script src="index_files/libs/kePrint-0.0.1/kePrint.js"></script>
+  <link href="index_files/libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+  <script src="index_files/libs/htmlwidgets-1.6.2/htmlwidgets.js"></script>
+  <script src="index_files/libs/jquery-1.12.4/jquery.min.js"></script>
+  <link href="index_files/libs/leaflet-1.3.1/leaflet.css" rel="stylesheet">
+  <script src="index_files/libs/leaflet-1.3.1/leaflet.js"></script>
+  <link href="index_files/libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet">
+  <script src="index_files/libs/proj4-2.6.2/proj4.min.js"></script>
+  <script src="index_files/libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+  <link href="index_files/libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet">
+  <script src="index_files/libs/leaflet-binding-2.1.1/leaflet.js"></script>
+  <script src="index_files/libs/leaflet-providers-1.9.0/leaflet-providers_1.9.0.js"></script>
+  <script src="index_files/libs/leaflet-providers-plugin-2.1.1/leaflet-providers-plugin.js"></script>
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -350,7 +361,7 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Seminario</h1>
-  <p class="subtitle">Disentangling the soil and water relationship</p>
+  <p class="subtitle">Desenredando la relación suelo-agua</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -366,44 +377,70 @@ Dra. Sara E. Acevedo <a href="https://orcid.org/0000-0003-3203-2106" class="quar
     </div>
 </div>
 
-  <p class="date">October 11, 2023</p>
+  <p class="date">2023-11-10</p>
 </section>
 <section id="acerca-de-mi" class="slide level2">
 <h2>Acerca de mi 👩🏽‍💻</h2>
 <div class="columns" style="text-align:center;margin-top:50px;">
 <div class="column" style="margin-top:50px">
 <div class="r-stack">
-<p><img data-src="images/primera.png" class="fragment fade-in-then-semi-out" style="width:70%;transform:rotate(-5deg);" data-fragment-index="1" alt="yo shikita"></p>
-<p><img data-src="images/segunda.jpeg" class="fragment fade-in-then-semi-out" style="transform:rotate(5deg);" data-fragment-index="2" alt="museo del suelo"></p>
-<p><img data-src="images/tercera.png" class="fragment fade-in-then-semi-out" style="transform:rotate(-1deg);" data-fragment-index="3" alt="muestreando"></p>
-<p><img data-src="images/cuarta.jpeg" class="fragment fade-in-then-semi-out" style="transform:rotate(1.5deg);" data-fragment-index="4" alt="ultima clase biofisica"></p>
-<p><img data-src="images/quinta.jpeg" class="fragment fade-in" style="transform:rotate(-3.5deg);" data-fragment-index="5" alt="Chicago posit"></p>
+<p><img data-src="images/primera.png" class="fragment fade-in-then-semi-out" style="width:70%;transform:rotate(-5deg);" data-fragment-index="1" alt="Torres del Paine"></p>
+<p><img data-src="images/segunda.jpeg" class="fragment fade-in-then-semi-out" style="transform:rotate(5deg);" data-fragment-index="2" alt="Museo del suelo"></p>
+<p><img data-src="images/tercera.png" class="fragment fade-in-then-semi-out" style="transform:rotate(-1deg);" data-fragment-index="3" alt="Muestreando"></p>
+<p><img data-src="images/cuarta.jpeg" class="fragment fade-in-then-semi-out" style="transform:rotate(1.5deg);" data-fragment-index="4" alt="Clases Biofisica Ambiental"></p>
+<p><img data-src="images/quinta.jpeg" class="fragment fade-in" style="transform:rotate(-3.5deg);" data-fragment-index="5" alt="Chicago Posit Conf"></p>
 </div>
 </div><div class="column" style="margin-top:25px">
 <div class="fragment" data-fragment-index="1">
 <p>Química mención Analítica y Ambiental <strong><a href="https://quimica.uc.cl/">PUC</a></strong></p>
 </div>
 <div class="fragment" data-fragment-index="2">
-<p>Master en Suelos y Biogeoquímica <strong><a href="https://www.ucdavis.edu/graduate-programs/soils-and-biogeochemistry">UC-Davis</a></strong> y Doctora en Ciencias de la Ingeniería <strong><a href="https://www.ing.uc.cl/hidraulica-y-ambiental/">PUC</a></strong></p>
+<p>Master en Suelos y Biogeoquímica <strong><a href="https://www.ucdavis.edu/graduate-programs/soils-and-biogeochemistry">UC-Davis</a></strong> Doctora en Ciencias de la Ingeniería <strong><a href="https://www.ing.uc.cl/hidraulica-y-ambiental/">PUC</a></strong></p>
 </div>
 <div class="fragment" data-fragment-index="6">
 <p>Ahora trabajando como postdoc en <strong><a href="https://www.cedeus.cl/pd-sara-acevedo/">CEDEUS</a></strong></p>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><a href="https://www.cedeus.cl"><img data-src="images/cedeus.jpeg" style="width:15%;"></a></p>
-</figure>
-</div>
 </div>
 </div>
 </div>
 </section>
-<section id="mis-líneas-de-investigación" class="title-slide slide level1 center" data-background-color="#40666e">
-<h1>Mis líneas de investigación</h1>
+<section id="acerca-de-mi-1" class="slide level2">
+<h2>Acerca de mi 👩🏽‍💻</h2>
+<div class="columns" style="text-align:center;margin-top:50px;">
+<div class="column" style="margin-top:50px">
+<div class="r-stack">
+<p><img data-src="images/sssa.jpeg" class="fragment fade-in-then-semi-out" style="width:70%;transform:rotate(-5deg);" data-fragment-index="1" alt="SSSA"></p>
+<p><img data-src="images/wageningen.jpeg" class="fragment fade-in-then-semi-out" style="transform:rotate(5deg);" data-fragment-index="2" alt="wageningen"></p>
+<p><img data-src="images/rladies_chile.png" class="fragment fade-in-then-semi-out" style="transform:rotate(-1deg);" data-fragment-index="3" alt="rladies"></p>
+<p><img data-src="images/lab.jpeg" class="fragment fade-in-then-semi-out" style="transform:rotate(1.5deg);" data-fragment-index="4" alt="lab"></p>
+<p><img data-src="images/youtube.png" class="fragment fade-in" style="transform:rotate(-3.5deg);" data-fragment-index="5" alt="youtube"></p>
+</div>
+</div><div class="column" style="margin-top:25px">
+<div class="fragment" data-fragment-index="1">
+<p>Me gusta investigar, educar y divulgar</p>
+</div>
+<div class="fragment" data-fragment-index="2">
+<p>Academia y voluntariado</p>
+</div>
+<div class="fragment" data-fragment-index="6">
+<ul>
+<li><strong><a href="https://rladies.org/directory/#sara-acevedo">R-Ladies Global</a></strong></li>
+<li><strong><a href="https://github.com/biofisicasuelos/">Laboratorio de Biofísica de Suelo</a></strong></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section>
+<section id="qué-me-motiva-a-estar-acá-hoy" class="title-slide slide level1 center" data-background-color="#40666e">
+<h1><span class="r-fit-text">¿Qué me motiva a estar acá hoy?</span></h1>
 
 </section>
+<section id="mis-líneas-de-investigación" class="slide level2">
+<h2>Mis líneas de investigación</h2>
 
+<img data-src="index_files/figure-revealjs/unnamed-chunk-1-1.png" width="960" class="r-stretch"></section></section>
 <section id="desenredar-la-relación-suelo-agua" class="title-slide slide level1 center" data-background-image="images/agua_suelo.jpeg" data-background-size="100%" data-background-opacity="0.5">
-<h1><span class="r-fit-text">Desenredar la relación suelo-agua</span></h1>
+<h1><span class="r-fit-text" style="color: white; font-size: 150px; background-color:#40666e;">Desenredar la relación suelo-agua</span></h1>
 
 </section>
 
@@ -411,205 +448,300 @@ Dra. Sara E. Acevedo <a href="https://orcid.org/0000-0003-3203-2106" class="quar
 <section id="mis-líneas-de-investigación-1" class="title-slide slide level1 center" data-background-color="#40666e">
 <h1>Mis líneas de investigación</h1>
 <div>
-<ul>
+<ol type="1">
 <li class="fragment">Física de suelos</li>
 <li class="fragment">Suelos urbanos</li>
 <li class="fragment">Análisis de datos</li>
-</ul>
+</ol>
 </div>
 </section>
 <section id="física-de-suelos" class="slide level2" data-background-image="images/building.png" data-background-size="55%">
-<h2>Física de suelos</h2>
+<h2>1. Física de suelos</h2>
 <h3 id="enfoque-conceptual">Enfoque conceptual <sup>1</sup></h3>
 <aside><ol class="aside-footnotes"><li id="fn1"><p><a href="https://doi.org/10.1525/elementa.2022.00043">Acevedo et al., 2022. How does building healthy soils impact sustainable use of water resources in irrigated agriculture?</a></p></li></ol></aside></section>
 <section id="física-de-suelos-1" class="slide level2">
-<h2>Física de suelos</h2>
+<h2>1. Física de suelos</h2>
 <h3 id="enfoque-conceptual-1">Enfoque conceptual <sup>1</sup></h3>
 <div class="fragment fade-up">
 <ul>
-<li>Desafío multidisciplinario</li>
+<li>Desafío <strong>multidisciplinario</strong></li>
 </ul>
 </div>
 <div class="fragment fade-up">
 <ul>
-<li>Empujar términos como “eco-funcionalidad” para describir el rol de la MO en los servicios del ecosistémicos</li>
+<li><strong>Eco-funcionalidad</strong> para describir el rol de la MO</li>
 </ul>
 </div>
 <div class="fragment fade-up">
 <ul>
-<li>Los suelos sanos puede repercutir en el uso sostenible de los recursos hídricos</li>
+<li>Los suelos sanos <strong>repercuten en el uso sostenible</strong> de recursos hídricos</li>
 </ul>
 </div>
 <aside><ol class="aside-footnotes"><li id="fn2"><p><a href="https://doi.org/10.1525/elementa.2022.00043">Acevedo et al., 2022. How does building healthy soils impact sustainable use of water resources in irrigated agriculture?</a></p></li></ol></aside></section>
-<section id="física-de-suelos-2" class="slide level2" data-background-image="images/pario.jpeg" data-background-size="55%">
-<h2>Física de suelos</h2>
+<section id="física-de-suelos-2" class="slide level2" data-background-image="images/pario.png" data-background-size="55%">
+<h2>1. Física de suelos</h2>
 <h3 id="experimental">Experimental <sup>1</sup></h3>
 <aside><ol class="aside-footnotes"><li id="fn3"><p><a href="https://doi.org/10.31545/intagr/144387">Acevedo et al., 2021. Testing the integral suspension pressure method for soil particle size analysis across a range of soil organic matter contents</a></p></li></ol></aside></section>
 <section id="física-de-suelos-3" class="slide level2">
-<h2>Física de suelos</h2>
+<h2>1. Física de suelos</h2>
 <h3 id="experimental-1">Experimental <sup>1</sup></h3>
 <div class="fragment fade-up">
 <ul>
-<li>Nuevas tecnologias para la descripción de las propiedades físicas del suelo deben ser evaluadas</li>
+<li><strong>Nuevas</strong> tecnologías</li>
 </ul>
 </div>
 <div class="fragment fade-up">
 <ul>
-<li>Aumento del volumen de datos debe ir de la mano con herramientas de análisis de datos</li>
+<li>Aumento del <strong>volumen</strong> de datos</li>
 </ul>
 </div>
 <div class="fragment fade-up">
 <ul>
-<li>Necesidad de archivos de suelo</li>
+<li>Necesidad de <strong>archivos</strong> de suelo</li>
 </ul>
 </div>
 <aside><ol class="aside-footnotes"><li id="fn4"><p><a href="https://doi.org/10.31545/intagr/144387">Acevedo et al., 2021. Testing the integral suspension pressure method for soil particle size analysis across a range of soil organic matter contents</a></p></li></ol></aside></section>
-<section id="física-de-suelos-4" class="slide level2" data-background-image="images/incendios.jpeg" data-background-size="55%">
-<h2>Física de suelos</h2>
-<h3 id="sus-efectos-en-el-medioambiente">Sus efectos en el medioambiente <sup>1</sup></h3>
-<aside><ol class="aside-footnotes"><li id="fn5"><p><a href="https://doi.org/10.1016/j.jhydrol.2022.128919">Acevedo et al., 2023. Effect of data availability and pedotransfer estimates on water flow modelling in wildfire-affected soils</a></p></li></ol></aside></section>
+<section id="física-de-suelos-4" class="slide level2">
+<h2>1. Física de suelos</h2>
+<h3 id="experimental-clásico-vs.-nuevo">Experimental: clásico vs.&nbsp;nuevo <sup>1</sup></h3>
+<p><img data-src="images/ajuste_pario.png"></p>
+<aside><ol class="aside-footnotes"><li id="fn5"><p><a href="https://doi.org/10.31545/intagr/144387">Acevedo et al., 2021. Testing the integral suspension pressure method for soil particle size analysis across a range of soil organic matter contents</a></p></li></ol></aside></section>
 <section id="física-de-suelos-5" class="slide level2">
-<h2>Física de suelos</h2>
+<h2>1. Física de suelos</h2>
+<h3 id="funciones-de-pedotransferencia">Funciones de pedotransferencia</h3>
+<iframe width="780" height="500" src="https://biofisica.shinyapps.io/SWRC/" title="Funciones de Pedotransferencia"></iframe>
+</section>
+<section id="física-de-suelos-6" class="slide level2" data-background-image="images/incendios.jpeg" data-background-size="55%">
+<h2>1. Física de suelos</h2>
+<h3 id="sus-efectos-en-el-medioambiente">Sus efectos en el medioambiente <sup>1</sup></h3>
+<aside><ol class="aside-footnotes"><li id="fn6"><p><a href="https://doi.org/10.1016/j.jhydrol.2022.128919">Acevedo et al., 2023. Effect of data availability and pedotransfer estimates on water flow modelling in wildfire-affected soils</a></p></li></ol></aside></section>
+<section id="física-de-suelos-7" class="slide level2">
+<h2>1. Física de suelos</h2>
 <h3 id="sus-efectos-en-el-medioambiente-1">Sus efectos en el medioambiente <sup>1</sup></h3>
 <div class="fragment fade-up">
 <ul>
-<li>Cambio clímatico como driver en cambios de la física del suelo</li>
+<li><strong>Cambio clímatico</strong> como driver en cambios de la física del suelo</li>
 </ul>
 </div>
 <div class="fragment fade-up">
 <ul>
-<li>Urgencia de estudios pirohidrologícos</li>
+<li>Urgencia de estudios <strong>pirohidrologícos</strong></li>
 </ul>
 </div>
 <div class="fragment fade-up">
 <ul>
-<li>Técnicas analíticas especializadas</li>
+<li>Técnicas analíticas <strong>especializadas</strong></li>
 </ul>
 </div>
 <div class="fragment fade-up">
 <ul>
-<li>Colaboración en manuscritos enviados a Geoderma</li>
+<li>Manuscritos enviados a <strong>Geoderma </strong></li>
 </ul>
 </div>
-<aside><ol class="aside-footnotes"><li id="fn6"><p><a href="https://doi.org/10.1016/j.jhydrol.2022.128919">Acevedo et al., 2023. Effect of data availability and pedotransfer estimates on water flow modelling in wildfire-affected soils</a></p></li></ol></aside></section>
+<aside><ol class="aside-footnotes"><li id="fn7"><p><a href="https://doi.org/10.1016/j.jhydrol.2022.128919">Acevedo et al., 2023. Effect of data availability and pedotransfer estimates on water flow modelling in wildfire-affected soils</a></p></li></ol></aside></section>
+<section id="física-de-suelos-8" class="slide level2">
+<h2>1. Física de suelos</h2>
+<h3 id="suelos-quemados-son-diferentes">Suelos quemados son diferentes <sup>1</sup></h3>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/contenido_humedad.png" style="width:40.0%;height:40.0%"></p>
+</figure>
+</div>
+<aside><ol class="aside-footnotes"><li id="fn8"><p><a href="https://doi.org/10.1016/j.jhydrol.2022.128919">Acevedo et al., 2023. Effect of data availability and pedotransfer estimates on water flow modelling in wildfire-affected soils</a></p></li></ol></aside></section>
 <section id="suelos-urbanos" class="slide level2" data-background-image="images/urban_concept.png" data-background-size="30%">
-<h2>Suelos urbanos</h2>
+<h2>2. Suelos urbanos</h2>
 <h3 id="urbanización---requerimientos-hídricos---salud-del-suelo">Urbanización - Requerimientos hídricos - Salud del suelo <sup>1</sup></h3>
-<aside><ol class="aside-footnotes"><li id="fn7"><p>Postulación Postdoctorado ANID 2024</p></li></ol></aside></section>
+<aside><ol class="aside-footnotes"><li id="fn9"><p>Postdoctorado ANID 2024 - Fondecyt Iniciación 2025</p></li></ol></aside></section>
 <section id="suelos-urbanos-1" class="slide level2">
-<h2>Suelos urbanos</h2>
+<h2>2. Suelos urbanos</h2>
 <h3 id="urbanización---requerimientos-hídricos---salud-del-suelo-1">Urbanización - Requerimientos hídricos - Salud del suelo <sup>1</sup></h3>
 <div class="fragment fade-up">
 <ul>
-<li>Suelos homogéneos en contextos heterogéneos</li>
+<li>Suelos <strong>homogéneos</strong> en contextos <strong>heterogéneos</strong></li>
 </ul>
 </div>
 <div class="fragment fade-up">
 <ul>
-<li>Urbanización es un driver en la pedogénesis de suelos urbanos</li>
+<li><strong>Urbanización</strong> es un driver en la pedogénesis de suelos urbanos</li>
 </ul>
 </div>
 <div class="fragment fade-up">
 <ul>
-<li>Suelos sanos potencialmente amortiguan el requerimiento hídrico</li>
+<li>Suelos sanos <strong>amortiguan</strong> el requerimiento hídrico</li>
 </ul>
 </div>
-<aside><ol class="aside-footnotes"><li id="fn8"><p>Postulación Postdoctorado ANID 2024</p></li></ol></aside></section>
+<aside><ol class="aside-footnotes"><li id="fn10"><p>Postdoctorado ANID 2024 - Fondecyt Iniciación 2025</p></li></ol></aside></section>
 <section id="suelos-urbanos-2" class="slide level2" data-background-image="images/plazas.jpeg" data-background-size="50%">
-<h2>Suelos urbanos</h2>
+<h2>2. Suelos urbanos</h2>
 <h3 id="salud-del-suelo---metales-pesados">Salud del suelo - Metales pesados<sup>1</sup></h3>
-<aside><ol class="aside-footnotes"><li id="fn9"><p><a href="https://doi.org/10.1016/j.apgeochem.2022.105230">Vega et al., 2022. A comparative study of soil metal concentrations in Chilean urban parks using four pollution indexes</a></p></li></ol></aside></section>
+<aside><ol class="aside-footnotes"><li id="fn11"><p><a href="https://doi.org/10.1016/j.apgeochem.2022.105230">Vega et al., 2022. A comparative study of soil metal concentrations in Chilean urban parks using four pollution indexes</a></p></li></ol></aside></section>
 <section id="suelos-urbanos-3" class="slide level2">
-<h2>Suelos urbanos</h2>
+<h2>2. Suelos urbanos</h2>
 <h3 id="salud-del-suelo---metales-pesados-1">Salud del suelo - Metales pesados<sup>1</sup></h3>
 <div class="fragment fade-up">
 <ul>
-<li>Conexión con contaminación ambiental y biodisponibilidad de metales</li>
+<li><strong>Contaminación</strong> y <strong>biodisponibilidad de metales</strong> en suelos</li>
 </ul>
 </div>
 <div class="fragment fade-up">
 <ul>
-<li>Urbanización como driver de contaminación</li>
+<li><strong>Urbanización</strong> como driver de contaminación</li>
 </ul>
 </div>
 <div class="fragment fade-up">
 <ul>
-<li>Relevancia de contar con información detallada en el contexto urbano</li>
+<li>Trabajo desarrollado en <strong>CEDEUS</strong></li>
 </ul>
 </div>
-<div class="fragment fade-up">
-<ul>
-<li>Trabajo desarrollado en CEDEUS</li>
-</ul>
-</div>
-<aside><ol class="aside-footnotes"><li id="fn10"><p><a href="https://doi.org/10.1016/j.apgeochem.2022.105230">Vega et al., 2022. A comparative study of soil metal concentrations in Chilean urban parks using four pollution indexes</a></p></li></ol></aside></section>
-<section id="suelos-urbanos-4" class="slide level2" data-background-image="images/infiltrometro.jpeg" data-background-size="25%">
-<h2>Suelos urbanos</h2>
+<aside><ol class="aside-footnotes"><li id="fn12"><p><a href="https://doi.org/10.1016/j.apgeochem.2022.105230">Vega et al., 2022. A comparative study of soil metal concentrations in Chilean urban parks using four pollution indexes</a></p></li></ol></aside></section>
+<section id="suelos-urbanos-4" class="slide level2">
+<h2>2. Suelos urbanos</h2>
 <h3 id="infiltración-en-parques-urbanos">Infiltración en parques urbanos</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/infiltrometro.jpeg" style="width:40.0%;height:40.0%"></p>
+</figure>
+</div>
 </section>
 <section id="suelos-urbanos-5" class="slide level2">
-<h2>Suelos urbanos</h2>
+<h2>2. Suelos urbanos</h2>
 <h3 id="infiltración-en-parques-urbanos-1">Infiltración en parques urbanos</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/protocolo.png" style="width:40.0%;height:40.0%"></p>
+</figure>
+</div>
+<ul>
+<li>Protocolo de muestreo diseñado por <a href="https://doi.org/10.1038/s41467-020-15376-9">Kelleher et al., 2020</a></li>
+<li>Investigación en desarrollo</li>
+</ul>
+</section>
+<section id="suelos-urbanos-6" class="slide level2">
+<h2>2. Suelos urbanos</h2>
+<h3 id="infiltración-en-parques-urbanos-2">Infiltración en parques urbanos</h3>
 <div class="fragment fade-up">
 <ul>
-<li>Análisis de infiltración para caracterizar el impacto de áreas verdes en el ciclo hidrológico</li>
+<li>Infiltración de áreas verdes y su impacto en el ciclo hidrológico</li>
 </ul>
 </div>
 <div class="fragment fade-up">
 <ul>
-<li>Métricas sencillas y rápidas para abarcar áreas importantes</li>
+<li>Métricas <strong>sencillas</strong> y <strong>rápidas</strong></li>
 </ul>
 </div>
 <div class="fragment fade-up">
 <ul>
-<li>Cuantificar ordenes de margitud permitirá desarrollar hipótesis del rol en el ciclo hidrológico</li>
+<li>Rol en el ciclo hidrológico de <strong>suelos urbanos</strong></li>
 </ul>
-</div>
-</section></section>
-<section id="section" class="title-slide slide level1 center">
-<h1></h1>
-<p>Proyecto Postdoctorado IngenieríaUC</p>
-<div class="cell">
-<div class="cell-output-display">
-
-<div data-pagedtable="false">
-  <script data-pagedtable-source="" type="application/json">
-{"columns":[{"label":["clase"],"name":[1],"type":["chr"],"align":["left"]},{"label":["area"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["area_p"],"name":[3],"type":["dbl"],"align":["right"]}],"data":[{"1":"BANDEJON Buen estado","2":"2541891.4","3":"64.17"},{"1":"BANDEJON Mal estado","2":"1419037.8","3":"35.83"},{"1":"CAMPO DEPORTIVO Buen estado","2":"5935144.4","3":"94.85"},{"1":"CAMPO DEPORTIVO Mal estado","2":"322135.8","3":"5.15"},{"1":"PARQUE Buen estado","2":"10539388.4","3":"70.44"},{"1":"PARQUE Mal estado","2":"4421957.8","3":"29.56"},{"1":"PLAZA Buen estado","2":"7671341.0","3":"66.94"},{"1":"PLAZA Mal estado","2":"3788692.1","3":"33.06"},{"1":"VEREDA Buen estado","2":"1032417.4","3":"64.05"},{"1":"VEREDA Mal estado","2":"579403.9","3":"35.95"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
-  </script>
-</div>
-</div>
 </div>
 </section>
+<section id="proyecto-postdoctorado-ingenieríauc" class="slide level2">
+<h2>Proyecto Postdoctorado IngenieríaUC</h2>
+<div class="cell">
+<div class="cell-output-display">
+<table class="lightable-classic" data-quarto-postprocess="true" style="font-size: 20px; font-family: &quot;Arial Narrow&quot;, &quot;Source Sans Pro&quot;, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;border-bottom: 0;">
+<caption>Análisis calidad estado plazas</caption>
+<thead>
+<tr class="header">
+<th style="text-align: center;" data-quarto-table-cell-role="th">Estado</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">metros cuadrados</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">%</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">BANDEJON Buen estado</td>
+<td style="text-align: center;">2541891.4</td>
+<td style="text-align: center;">64.17</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">BANDEJON Mal estado</td>
+<td style="text-align: center;">1419037.8</td>
+<td style="text-align: center;">35.83</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">CAMPO DEPORTIVO Buen estado</td>
+<td style="text-align: center;">5935144.4</td>
+<td style="text-align: center;">94.85</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">CAMPO DEPORTIVO Mal estado</td>
+<td style="text-align: center;">322135.8</td>
+<td style="text-align: center;">5.15</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">PARQUE Buen estado</td>
+<td style="text-align: center;">10539388.4</td>
+<td style="text-align: center;">70.44</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">PARQUE Mal estado</td>
+<td style="text-align: center;">4421957.8</td>
+<td style="text-align: center;">29.56</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">PLAZA Buen estado</td>
+<td style="text-align: center;">7671341.0</td>
+<td style="text-align: center;">66.94</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">PLAZA Mal estado</td>
+<td style="text-align: center;">3788692.1</td>
+<td style="text-align: center;">33.06</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">VEREDA Buen estado</td>
+<td style="text-align: center;">1032417.4</td>
+<td style="text-align: center;">64.05</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">VEREDA Mal estado</td>
+<td style="text-align: center;">579403.9</td>
+<td style="text-align: center;">35.95</td>
+</tr>
+</tbody><tfoot>
+<tr class="odd">
+<td style="text-align: center; padding: 0;"><sup>*</sup> Fuente: Minvu vía Observatorio de Ciudades UC</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+</tfoot>
 
+</table>
+
+
+</div>
+</div>
+</section></section>
 <section>
-<section id="section-1" class="title-slide slide level1 center">
+<section id="section" class="title-slide slide level1 center">
 <h1></h1>
 
-<img data-src="index_files/figure-revealjs/unnamed-chunk-2-1.png" width="960" class="r-stretch"></section>
+<img data-src="index_files/figure-revealjs/unnamed-chunk-3-1.png" width="960" class="r-stretch"></section>
 <section id="análisis-de-datos" class="slide level2" data-background-image="https://the-turing-way.netlify.app/_images/reproducibility.jpg" data-background-size="50%">
-<h2>Análisis de datos<sup>1</sup></h2>
-<aside><ol class="aside-footnotes"><li id="fn11"><p><a href="10.5281/zenodo.3332807">The Turing Way project illustration by Scriberia</a></p></li></ol></aside></section>
+<h2>3. Análisis de datos<sup>1</sup></h2>
+<aside><ol class="aside-footnotes"><li id="fn13"><p><a href="10.5281/zenodo.3332807">The Turing Way project illustration by Scriberia</a></p></li></ol></aside></section>
 <section id="análisis-de-datos-1" class="slide level2">
-<h2>Análisis de datos</h2>
+<h2>3. Análisis de datos</h2>
 <h3 id="reproducibilidad-en-ciencias-del-suelo">Reproducibilidad en ciencias del suelo</h3>
 <div class="fragment fade-up">
 <ul>
-<li>El reto de lograr la reproducibilidad persiste en las ciencia del suelo <span class="citation" data-cites="CORRENDO2023101275">(<a href="#/references" role="doc-biblioref" onclick="">Correndo et al. 2023</a>)</span></li>
+<li>Lograr reproducibilidad en ciencias es un <strong>reto</strong> <span class="citation" data-cites="CORRENDO2023101275">(<a href="#/references" role="doc-biblioref" onclick="">Correndo et al. 2023</a>)</span></li>
 </ul>
 </div>
 <div class="fragment fade-up">
 <ul>
-<li>Agencias de financiamiento exigen aumentar la transparencia y la reproducibilidad <span class="citation" data-cites="BondLamberty2016">(<a href="#/references" role="doc-biblioref" onclick="">Bond-Lamberty, Smith, and Bailey 2016</a>)</span></li>
+<li>Agencias de financiamiento exigen aumentar <strong>transparencia</strong><span class="citation" data-cites="BondLamberty2016">(<a href="#/references" role="doc-biblioref" onclick="">Bond-Lamberty, Smith, and Bailey 2016</a>)</span></li>
 </ul>
 </div>
 <div class="fragment fade-up">
 <ul>
-<li>Investigación abierta, accesible, reutilizable y reproducible puede tener un impacto positivo significativo en la comunidad científica <span class="citation" data-cites="Hall2022">(<a href="#/references" role="doc-biblioref" onclick="">Hall et al. 2022</a>)</span></li>
+<li>Investigación <strong>abierta, accesible, reutilizable y reproducible</strong> <span class="citation" data-cites="Hall2022">(<a href="#/references" role="doc-biblioref" onclick="">Hall et al. 2022</a>)</span></li>
 </ul>
 </div>
 </section>
 <section id="análisis-de-datos-2" class="slide level2">
-<h2>Análisis de datos</h2>
+<h2>3. Análisis de datos</h2>
 <h3 id="reproducibilidad-en-ciencias-del-suelo-1">Reproducibilidad en ciencias del suelo</h3>
 <div class="columns">
 <div class="column" style="width:30%;">
@@ -617,7 +749,7 @@ Dra. Sara E. Acevedo <a href="https://orcid.org/0000-0003-3203-2106" class="quar
 </div><div class="column" style="width:70%;">
 <div class="fragment fade-up">
 <ul>
-<li>Un paquete de R (infiltrodiscR) que contiene funciones de R compatibles con el análisis de datos de infiltración</li>
+<li>Paquete de R que contiene funciones para el análisis de datos de infiltración</li>
 </ul>
 </div>
 <div class="fragment fade-up">
@@ -633,51 +765,115 @@ Dra. Sara E. Acevedo <a href="https://orcid.org/0000-0003-3203-2106" class="quar
 <h1>Interdisciplina y colaboración</h1>
 
 </section>
+<section id="section-1" class="slide level2">
+<h2></h2>
+
+<img data-src="index_files/figure-revealjs/unnamed-chunk-4-1.png" width="960" class="r-stretch"></section>
 <section id="section-2" class="slide level2">
 <h2></h2>
 
-<img data-src="index_files/figure-revealjs/unnamed-chunk-3-1.png" width="960" class="r-stretch"></section>
+<img data-src="index_files/figure-revealjs/unnamed-chunk-5-1.png" width="960" class="r-stretch"></section>
+<section id="section-3" class="slide level2">
+<h2></h2>
+
+<img data-src="index_files/figure-revealjs/unnamed-chunk-6-1.png" width="960" class="r-stretch"></section>
 <section id="interdisciplina-y-colaboración-1" class="slide level2">
 <h2>Interdisciplina y colaboración</h2>
-<h3 id="concreta">Concreta</h3>
+<h3 id="nacional">Nacional</h3>
 <div class="fragment fade-up">
 <ul>
-<li>Departamento de Ingeniería Hidráulica y Ambiental UC</li>
+<li>Departamento de Ingeniería Hidráulica y Ambiental <strong>PUC</strong></li>
 </ul>
 </div>
 <div class="fragment fade-up">
 <ul>
-<li>Departamento de Salud Pública UC</li>
+<li>Departamento de Salud Pública <strong>PUC</strong></li>
 </ul>
 </div>
 <div class="fragment fade-up">
 <ul>
-<li>Crop and Soil Sciences OSU</li>
+<li>Departamento de Ecosistemas y Medio Ambiente <strong>PUC</strong></li>
 </ul>
 </div>
-<h3 id="potencial">Potencial</h3>
+<h3 id="internacional">Internacional</h3>
 <div class="fragment fade-up">
 <ul>
-<li>Interesados en integrar open-science principles</li>
+<li>Crop and Soil Sciences <strong>OSU</strong></li>
 </ul>
 </div>
 <div class="fragment fade-up">
 <ul>
-<li>Percepción remota</li>
+<li>Worldwide <strong>RLadies-Global</strong></li>
 </ul>
+</div>
+</section></section>
+<section>
+<section id="impacto-de-la-investigación" class="title-slide slide level1 center" data-background-color="#40666e">
+<h1>Impacto de la investigación</h1>
+
+</section>
+<section id="impacto-de-la-investigación-1" class="slide level2">
+<h2>Impacto de la investigación</h2>
+<h3 id="docencia">Docencia</h3>
+<div class="fragment fade-up">
+<ul>
+<li>ICH3600 Biofísica Ambiental <strong>PUC</strong></li>
+</ul>
+</div>
+<div class="fragment fade-up">
+<ul>
+<li>Geología y Ciencias del Suelo</li>
+</ul>
+</div>
+<div class="fragment fade-up">
+<ul>
+<li>Nuevo curso: Física de Suelos</li>
+</ul>
+</div>
+<div class="fragment fade-up">
+<ul>
+<li>Seminario postgrado programación <strong>R</strong> y <strong>Python</strong></li>
+</ul>
+</div>
+<h3 id="vinculación-con-el-medio">Vinculación con el medio</h3>
+<div class="fragment fade-up">
+<ul>
+<li><strong>RLadies-Global</strong></li>
+</ul>
+</div>
+<div class="fragment fade-up">
+<ul>
+<li>Nuevos grupos locales</li>
+</ul>
+</div>
+</section></section>
+<section>
+<section id="section-4" class="title-slide slide level1 center">
+<h1>👩🏽‍💻🗺️</h1>
+<div class="cell">
+<div class="cell-output-display">
+
+<div class="leaflet html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-bca8d816b02bf9c7ca54" style="width:960px;height:480px;"></div>
+<script type="application/json" data-for="htmlwidget-bca8d816b02bf9c7ca54">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addProviderTiles","args":["OpenStreetMap.Mapnik",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addMarkers","args":[[38.538232,51.969187,-33.4996417,41.887667,27.979168,32.715736,29.492441,-50.9423262,-18.48027777,37.870151,45.8162432],[-121.761712,5.665395,-70.76693059999999,-87.62252100000001,-82.539337,-117.161087,-98.610573,-73.4067879,-70.32361111,-122.2594606,-119.28251],null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},["UC-Davis","Wageningen University","PUC","POSIT","SSSA","SSSA","SSSA","Muestreo","Muestreo","UC-Berkeley","Oregon State University"],null,null,null,["Master","Presentacion + round table","Pregrado y Grado de Doctor","Curso ánalisis de datos","Presentacion","Presentacion","Presentacion","Muestreo más austral","Muestreo más al norte","Pasantía + colaboración paper","Colaboración"],{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[-50.9423262,51.969187],"lng":[-122.2594606,5.665395]}},"evals":[],"jsHooks":[]}</script>
+</div>
 </div>
 </section>
 <section id="preguntas" class="slide level2">
-<h2>Preguntas?? 👩🏽‍💻</h2>
+<h2>Preguntas? 👩🏽‍💻</h2>
 <ul>
-<li>Mapas y tablas fueron creados en R</li>
+<li>Toda la presentación fue creada en R</li>
 <li>Puedes ver el código con que creé esta presentación <a href="https://www.github.com/Saryace/seminario_seacevedo">aquí</a></li>
 <li>O puedes escanear este QR <div id="qrcode" class="qrcode"></div>
 <script type="text/javascript">
-var qrcode = new QRCode("qrcode", {"text":"https://www.github.com/Saryace/seminario_seacevedo","colorDark":"#000000","width":128,"height":128,"colorLight":"#ffffff"});
+var qrcode = new QRCode("qrcode", {"text":"https://www.github.com/Saryace/seminario_seacevedo","colorLight":"#ffffff","colorDark":"#000000","height":128,"width":128});
 </script>
     </li>
 </ul>
+</section></section>
+<section>
+<section id="gracias-por-su-atención" class="title-slide slide level1 center" data-background-image="images/agua_suelo.jpeg" data-background-size="100%" data-background-opacity="0.5">
+<h1><span class="r-fit-text" style="color: white; font-size: 150px; background-color:#40666e;">Gracias por su atención</span></h1>
+
 </section>
 <section id="references" class="slide level2 smaller scrollable">
 <h2>References</h2>
