@@ -69,14 +69,10 @@ Ahora trabajando como postdoc en **[CEDEUS](https://www.cedeus.cl/pd-sara-aceved
 Me gusta investigar, educar y divulgar 
 :::
 ::: {.fragment fragment-index=2}
-Academia y voluntariado
+Academia y extracurricular
 :::
 ::: {.fragment fragment-index=6}
-
-- **[R-Ladies Global](https://rladies.org/directory/#sara-acevedo)**
-- **[Laboratorio de Biofísica de Suelo](https://github.com/biofisicasuelos/)**
-
-
+Siempre buscando cosas para aprender
 :::
 ::::
 
@@ -142,7 +138,7 @@ ggplot(data = data_pubs_titles,
 -   Los suelos sanos **repercuten en el uso sostenible** de recursos hídricos
 ::: 
 
-## 1. Física de suelos {background-image="images/pario.png" background-size="55%"}
+## 1. Física de suelos {background-image="images/pario.png" background-size="50%"}
 ### Experimental ^[[Acevedo et al., 2021. Testing the integral suspension pressure method for soil particle size analysis across a range of soil organic matter contents](https://doi.org/10.31545/intagr/144387)]
 
 ## 1. Física de suelos 
@@ -237,7 +233,7 @@ ggplot(data = data_pubs_titles,
 
 ### Infiltración en parques urbanos 
 
-![](images/infiltrometro.jpeg){fig-align="center" width=40% height=40%}
+![](images/infiltrometro.jpeg){fig-align="center" width=40% height=30%}
 
 ## 2. Suelos urbanos 
 
@@ -486,10 +482,10 @@ ggplot(data = data_pubs_titles,
 ::: 
 ### Vinculación con el medio
 ::: {.fragment .fade-up}
--   **RLadies-Global**
+- **[R-Ladies Global](https://rladies.org/directory/#sara-acevedo)**
 :::
 ::: {.fragment .fade-up}
--   Nuevos grupos locales
+- **[Laboratorio de Biofísica de Suelo](https://github.com/biofisicasuelos/)**
 ::: 
 
 # 👩🏽‍💻🗺️
@@ -562,6 +558,6 @@ leaflet(data = colaboracion) %>% addProviderTiles(providers$OpenStreetMap.Mapnik
 -   O puedes escanear este QR {{< qrcode https://www.github.com/Saryace/seminario_seacevedo >}}
 
 
-# [Gracias por su atención]{.r-fit-text style="color: white; font-size: 150px; background-color:#40666e;"} {background-image="images/agua_suelo.jpeg" background-size="100%" background-opacity="0.5"}
+# [Gracias 👩🏽‍💻]{.r-fit-text style="color: white; font-size: 150px; background-color:#40666e;"} {background-image="images/agua_suelo.jpeg" background-size="100%" background-opacity="0.5"}
 
 ## References
