@@ -160,14 +160,6 @@ ggplot(data = data_pubs_titles,
 
 ![](images/ajuste_pario.png)
 
-## 1. Física de suelos 
-
-### Funciones de pedotransferencia
-
-```{=html}
-<iframe width="780" height="500" src="https://biofisica.shinyapps.io/SWRC/" title="Funciones de Pedotransferencia"></iframe>
-```
-
 ## 1. Física de suelos {background-image="images/incendios.jpeg" background-size="55%"}
 
 ### Sus efectos en el medioambiente ^[[Acevedo et al., 2023. Effect of data availability and pedotransfer estimates on water flow modelling in wildfire-affected soils](https://doi.org/10.1016/j.jhydrol.2022.128919)]
