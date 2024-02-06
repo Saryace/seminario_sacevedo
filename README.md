@@ -12,7 +12,7 @@ Presentación en el marco de mi postulación a profesor asistente. Para preparar
 - Formato slides Quarto: clean por [grantmcdermott](https://github.com/grantmcdermott/quarto-revealjs-clean)
 - Idea imágenes solapadas de slides de [James Goldie](https://github.com/jimjam-slam/talk-runapp-quarto-2022)
 
-:usa: Seminar talk 
+Seminar talk 
 
 Presentation for my application for assistant professor. I followed the advice of [UCSF Careers](https://career.ucsf.edu/sites/g/files/tkssra2771/f/wysiwyg/ResearchersAcademicJobTalksUW.pdf) 
 
