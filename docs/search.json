@@ -227,8 +227,8 @@
     "objectID": "seminario_postulacion_fasn/index.html#acerca-de-mi",
     "href": "seminario_postulacion_fasn/index.html#acerca-de-mi",
     "title": "Seminario",
-    "section": "",
-    "text": "Química mención Analítica y Ambiental PUC\n\n\nMaster en Suelos y Biogeoquímica UC-Davis Doctora en Ciencias de la Ingeniería PUC\n\n\nAhora trabajando como postdoc en CEDEUS"
+    "section": "Acerca de mi 👩🏽‍💻",
+    "text": "Acerca de mi 👩🏽‍💻\n\n\n\n\n\n\n\n\n\n\n\nQuímica mención Analítica y Ambiental PUC\n\n\nMaster en Suelos y Biogeoquímica UC-Davis Doctora en Ciencias de la Ingeniería PUC\n\n\nAhora trabajando como postdoc en CEDEUS"
   },
   {
     "objectID": "seminario_postulacion_fasn/index.html#acerca-de-mi-1",
@@ -242,140 +242,140 @@
     "href": "seminario_postulacion_fasn/index.html#mis-líneas-de-investigación",
     "title": "Seminario",
     "section": "Mis líneas de investigación",
-    "text": "Mis líneas de investigación\n\nlibrary(scholar)\nlibrary(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.5.1\n✔ ggplot2   3.5.0     ✔ tibble    3.2.1\n✔ lubridate 1.9.3     ✔ tidyr     1.3.1\n✔ purrr     1.0.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\nlibrary(tidytext)\nlibrary(ggwordcloud)\nlibrary(gtExtras)\n\nLoading required package: gt\n\ngs_id &lt;- \"WJqqnIQAAAAJ&hl\"\n\npubs &lt;- get_publications(gs_id)\n\ndata_pubs_titles &lt;-\npubs %&gt;% \n  select(title) %&gt;% \n  unnest_tokens(word, title) %&gt;% \n  anti_join(get_stopwords()) %&gt;% \n  anti_join(get_stopwords(lan = \"es\")) %&gt;% \n  count(word, sort = TRUE)  \n\nJoining with `by = join_by(word)`\nJoining with `by = join_by(word)`\n\nggplot(data = data_pubs_titles, \n       aes(label = word, size = n, col = as.character(n))) + \n  geom_text_wordcloud(rm_outside = TRUE, max_steps = 1,\n                      grid_size = 1, eccentricity = .9)+\n  scale_size_area(max_size = 14)+\n  scale_color_brewer(palette = \"Paired\", direction = -1) +\n  theme_void() +\n  theme(plot.background = element_rect(fill = \"transparent\"))"
+    "text": "Mis líneas de investigación"
   },
   {
     "objectID": "seminario_postulacion_fasn/index.html#física-de-suelos",
     "href": "seminario_postulacion_fasn/index.html#física-de-suelos",
     "title": "Seminario",
     "section": "1. Física de suelos",
-    "text": "1. Física de suelos\n\nEnfoque conceptual 1"
+    "text": "1. Física de suelos\nEnfoque conceptual 1\nAcevedo et al., 2022. How does building healthy soils impact sustainable use of water resources in irrigated agriculture?"
   },
   {
     "objectID": "seminario_postulacion_fasn/index.html#física-de-suelos-1",
     "href": "seminario_postulacion_fasn/index.html#física-de-suelos-1",
     "title": "Seminario",
     "section": "1. Física de suelos",
-    "text": "1. Física de suelos\n\nEnfoque conceptual 2\n\n\nDesafío multidisciplinario\n\n\n\n\nEco-funcionalidad para describir el rol de la MO\n\n\n\n\nLos suelos sanos repercuten en el uso sostenible de recursos hídricos"
+    "text": "1. Física de suelos\nEnfoque conceptual 1\n\n\nDesafío multidisciplinario\n\n\n\n\nEco-funcionalidad para describir el rol de la MO\n\n\n\n\nLos suelos sanos repercuten en el uso sostenible de recursos hídricos\n\n\nAcevedo et al., 2022. How does building healthy soils impact sustainable use of water resources in irrigated agriculture?"
   },
   {
     "objectID": "seminario_postulacion_fasn/index.html#física-de-suelos-2",
     "href": "seminario_postulacion_fasn/index.html#física-de-suelos-2",
     "title": "Seminario",
     "section": "1. Física de suelos",
-    "text": "1. Física de suelos\n\nExperimental 3"
+    "text": "1. Física de suelos\nExperimental 1\nAcevedo et al., 2021. Testing the integral suspension pressure method for soil particle size analysis across a range of soil organic matter contents"
   },
   {
     "objectID": "seminario_postulacion_fasn/index.html#física-de-suelos-3",
     "href": "seminario_postulacion_fasn/index.html#física-de-suelos-3",
     "title": "Seminario",
     "section": "1. Física de suelos",
-    "text": "1. Física de suelos\n\nExperimental 4\n\n\nNuevas tecnologías\n\n\n\n\nAumento del volumen de datos\n\n\n\n\nNecesidad de archivos de suelo"
+    "text": "1. Física de suelos\nExperimental 1\n\n\nNuevas tecnologías\n\n\n\n\nAumento del volumen de datos\n\n\n\n\nNecesidad de archivos de suelo\n\n\nAcevedo et al., 2021. Testing the integral suspension pressure method for soil particle size analysis across a range of soil organic matter contents"
   },
   {
     "objectID": "seminario_postulacion_fasn/index.html#física-de-suelos-4",
     "href": "seminario_postulacion_fasn/index.html#física-de-suelos-4",
     "title": "Seminario",
     "section": "1. Física de suelos",
-    "text": "1. Física de suelos\n\nExperimental: clásico vs. nuevo 5"
+    "text": "1. Física de suelos\nExperimental: clásico vs. nuevo 1\n\nAcevedo et al., 2021. Testing the integral suspension pressure method for soil particle size analysis across a range of soil organic matter contents"
   },
   {
     "objectID": "seminario_postulacion_fasn/index.html#física-de-suelos-5",
     "href": "seminario_postulacion_fasn/index.html#física-de-suelos-5",
     "title": "Seminario",
     "section": "1. Física de suelos",
-    "text": "1. Física de suelos\n\nSus efectos en el medioambiente 6"
+    "text": "1. Física de suelos\nSus efectos en el medioambiente 1\nAcevedo et al., 2023. Effect of data availability and pedotransfer estimates on water flow modelling in wildfire-affected soils"
   },
   {
     "objectID": "seminario_postulacion_fasn/index.html#física-de-suelos-6",
     "href": "seminario_postulacion_fasn/index.html#física-de-suelos-6",
     "title": "Seminario",
     "section": "1. Física de suelos",
-    "text": "1. Física de suelos\n\nSus efectos en el medioambiente 7\n\n\nCambio clímatico como driver en cambios de la física del suelo\n\n\n\n\nUrgencia de estudios pirohidrologícos\n\n\n\n\nTécnicas analíticas especializadas\n\n\n\n\nManuscritos enviados a Geoderma"
+    "text": "1. Física de suelos\nSus efectos en el medioambiente 1\n\n\nCambio clímatico como driver en cambios de la física del suelo\n\n\n\n\nUrgencia de estudios pirohidrologícos\n\n\n\n\nTécnicas analíticas especializadas\n\n\n\n\nManuscritos enviados a Geoderma \n\n\nAcevedo et al., 2023. Effect of data availability and pedotransfer estimates on water flow modelling in wildfire-affected soils"
   },
   {
     "objectID": "seminario_postulacion_fasn/index.html#física-de-suelos-7",
     "href": "seminario_postulacion_fasn/index.html#física-de-suelos-7",
     "title": "Seminario",
     "section": "1. Física de suelos",
-    "text": "1. Física de suelos\n\nSuelos quemados son diferentes 8"
+    "text": "1. Física de suelos\nSuelos quemados son diferentes 1\n\n\n\n\n\nAcevedo et al., 2023. Effect of data availability and pedotransfer estimates on water flow modelling in wildfire-affected soils"
   },
   {
     "objectID": "seminario_postulacion_fasn/index.html#suelos-urbanos",
     "href": "seminario_postulacion_fasn/index.html#suelos-urbanos",
     "title": "Seminario",
     "section": "2. Suelos urbanos",
-    "text": "2. Suelos urbanos\n\nUrbanización - Requerimientos hídricos - Salud del suelo 9"
+    "text": "2. Suelos urbanos\nUrbanización - Requerimientos hídricos - Salud del suelo 1\nPostdoctorado ANID 2024 - Fondecyt Iniciación 2025"
   },
   {
     "objectID": "seminario_postulacion_fasn/index.html#suelos-urbanos-1",
     "href": "seminario_postulacion_fasn/index.html#suelos-urbanos-1",
     "title": "Seminario",
     "section": "2. Suelos urbanos",
-    "text": "2. Suelos urbanos\n\nUrbanización - Requerimientos hídricos - Salud del suelo 10\n\n\nSuelos homogéneos en contextos heterogéneos\n\n\n\n\nUrbanización es un driver en la pedogénesis de suelos urbanos\n\n\n\n\nSuelos sanos amortiguan el requerimiento hídrico"
+    "text": "2. Suelos urbanos\nUrbanización - Requerimientos hídricos - Salud del suelo 1\n\n\nSuelos homogéneos en contextos heterogéneos\n\n\n\n\nUrbanización es un driver en la pedogénesis de suelos urbanos\n\n\n\n\nSuelos sanos amortiguan el requerimiento hídrico\n\n\nPostdoctorado ANID 2024 - Fondecyt Iniciación 2025"
   },
   {
     "objectID": "seminario_postulacion_fasn/index.html#suelos-urbanos-2",
     "href": "seminario_postulacion_fasn/index.html#suelos-urbanos-2",
     "title": "Seminario",
     "section": "2. Suelos urbanos",
-    "text": "2. Suelos urbanos\n\nSalud del suelo - Metales pesados11"
+    "text": "2. Suelos urbanos\nSalud del suelo - Metales pesados1\nVega et al., 2022. A comparative study of soil metal concentrations in Chilean urban parks using four pollution indexes"
   },
   {
     "objectID": "seminario_postulacion_fasn/index.html#suelos-urbanos-3",
     "href": "seminario_postulacion_fasn/index.html#suelos-urbanos-3",
     "title": "Seminario",
     "section": "2. Suelos urbanos",
-    "text": "2. Suelos urbanos\n\nSalud del suelo - Metales pesados12\n\n\nContaminación y biodisponibilidad de metales en suelos\n\n\n\n\nUrbanización como driver de contaminación\n\n\n\n\nTrabajo desarrollado en CEDEUS"
+    "text": "2. Suelos urbanos\nSalud del suelo - Metales pesados1\n\n\nContaminación y biodisponibilidad de metales en suelos\n\n\n\n\nUrbanización como driver de contaminación\n\n\n\n\nTrabajo desarrollado en CEDEUS\n\n\nVega et al., 2022. A comparative study of soil metal concentrations in Chilean urban parks using four pollution indexes"
   },
   {
     "objectID": "seminario_postulacion_fasn/index.html#suelos-urbanos-4",
     "href": "seminario_postulacion_fasn/index.html#suelos-urbanos-4",
     "title": "Seminario",
     "section": "2. Suelos urbanos",
-    "text": "2. Suelos urbanos\n\nInfiltración en parques urbanos"
+    "text": "2. Suelos urbanos\nInfiltración en parques urbanos"
   },
   {
     "objectID": "seminario_postulacion_fasn/index.html#suelos-urbanos-5",
     "href": "seminario_postulacion_fasn/index.html#suelos-urbanos-5",
     "title": "Seminario",
     "section": "2. Suelos urbanos",
-    "text": "2. Suelos urbanos\n\nInfiltración en parques urbanos\n\n\n\n\n\n\nProtocolo de muestreo diseñado por Kelleher et al., 2020\nInvestigación en desarrollo"
+    "text": "2. Suelos urbanos\nInfiltración en parques urbanos\n\n\n\n\n\n\nProtocolo de muestreo diseñado por Kelleher et al., 2020\nInvestigación en desarrollo"
   },
   {
     "objectID": "seminario_postulacion_fasn/index.html#suelos-urbanos-6",
     "href": "seminario_postulacion_fasn/index.html#suelos-urbanos-6",
     "title": "Seminario",
     "section": "2. Suelos urbanos",
-    "text": "2. Suelos urbanos\n\nInfiltración en parques urbanos\n\n\nInfiltración de áreas verdes y su impacto en el ciclo hidrológico\n\n\n\n\nMétricas sencillas y rápidas\n\n\n\n\nRol en el ciclo hidrológico de suelos urbanos"
+    "text": "2. Suelos urbanos\nInfiltración en parques urbanos\n\n\nInfiltración de áreas verdes y su impacto en el ciclo hidrológico\n\n\n\n\nMétricas sencillas y rápidas\n\n\n\n\nRol en el ciclo hidrológico de suelos urbanos"
   },
   {
     "objectID": "seminario_postulacion_fasn/index.html#proyecto-postdoctorado-ingenieríauc",
     "href": "seminario_postulacion_fasn/index.html#proyecto-postdoctorado-ingenieríauc",
     "title": "Seminario",
     "section": "Proyecto Postdoctorado IngenieríaUC",
-    "text": "Proyecto Postdoctorado IngenieríaUC\n\nlibrary(sf)\n\nLinking to GEOS 3.11.0, GDAL 3.5.3, PROJ 9.1.0; sf_use_s2() is TRUE\n\nlibrary(janitor)\n\n\nAttaching package: 'janitor'\n\n\nThe following objects are masked from 'package:stats':\n\n    chisq.test, fisher.test\n\nlibrary(tidyverse)\nlibrary(kableExtra)\n\n\nAttaching package: 'kableExtra'\n\n\nThe following object is masked from 'package:dplyr':\n\n    group_rows\n\n# https://ideocuc-ocuc.hub.arcgis.com/search?collection=Dataset\n# datos enero 2020\ndatos_urbanos &lt;- read_sf(\"datos/sup_areas_verdes_stgo.geojson\")\n\nareas_verdes &lt;- \ndatos_urbanos %&gt;%\n  as_tibble() %&gt;%\n  mutate(clase = case_when(str_detect(clase, \"PARQUE\") ~ \"PARQUE\",\n                           .default = clase)) %&gt;%\n  group_by(clase, estado_2) %&gt;% \n  summarise(area = sum(area_m2))%&gt;% \n  ungroup() \n\n`summarise()` has grouped output by 'clase'. You can override using the\n`.groups` argument.\n\nareas_verdes %&gt;% \n  mutate(estado = case_match(estado_2,\n      \"BUEN\" ~ \"Buen estado\",\n      \"MAL\" ~ \"Mal estado\")) %&gt;% \n  group_by(clase) %&gt;% \n  mutate(area_p = round(area * 100 / sum(area), 2)) %&gt;% \n  mutate(clase = paste(clase,estado)) %&gt;% \n  select(-estado, -estado_2, clase, area_p, area) %&gt;% \n  kable(booktabs = T, escape = F, align = \"c\",\n        col.names = c(\"Estado\",\"metros cuadrados\", \"%\"),\n        caption = \"Análisis calidad estado plazas\") %&gt;%\n  kable_classic(\n    full_width = F,\n    position = \"center\", font_size = 20\n  ) %&gt;% \n  footnote(symbol = \"Fuente: Minvu vía Observatorio de Ciudades UC\")\n\n\nAnálisis calidad estado plazas\n\n\nEstado\nmetros cuadrados\n%\n\n\n\n\nBANDEJON Buen estado\n2541891.4\n64.17\n\n\nBANDEJON Mal estado\n1419037.8\n35.83\n\n\nCAMPO DEPORTIVO Buen estado\n5935144.4\n94.85\n\n\nCAMPO DEPORTIVO Mal estado\n322135.8\n5.15\n\n\nPARQUE Buen estado\n10539388.4\n70.44\n\n\nPARQUE Mal estado\n4421957.8\n29.56\n\n\nPLAZA Buen estado\n7671341.0\n66.94\n\n\nPLAZA Mal estado\n3788692.1\n33.06\n\n\nVEREDA Buen estado\n1032417.4\n64.05\n\n\nVEREDA Mal estado\n579403.9\n35.95\n\n\n\n* Fuente: Minvu vía Observatorio de Ciudades UC"
+    "text": "Proyecto Postdoctorado IngenieríaUC\n\n\n\nAnálisis calidad estado plazas\n\n\nEstado\nmetros cuadrados\n%\n\n\n\n\nBANDEJON Buen estado\n2541891.4\n64.17\n\n\nBANDEJON Mal estado\n1419037.8\n35.83\n\n\nCAMPO DEPORTIVO Buen estado\n5935144.4\n94.85\n\n\nCAMPO DEPORTIVO Mal estado\n322135.8\n5.15\n\n\nPARQUE Buen estado\n10539388.4\n70.44\n\n\nPARQUE Mal estado\n4421957.8\n29.56\n\n\nPLAZA Buen estado\n7671341.0\n66.94\n\n\nPLAZA Mal estado\n3788692.1\n33.06\n\n\nVEREDA Buen estado\n1032417.4\n64.05\n\n\nVEREDA Mal estado\n579403.9\n35.95\n\n\n\n* Fuente: Minvu vía Observatorio de Ciudades UC"
   },
   {
     "objectID": "seminario_postulacion_fasn/index.html#análisis-de-datos",
     "href": "seminario_postulacion_fasn/index.html#análisis-de-datos",
     "title": "Seminario",
-    "section": "3. Análisis de datos13",
-    "text": "3. Análisis de datos13"
+    "section": "3. Análisis de datos1",
+    "text": "3. Análisis de datos1\nThe Turing Way project illustration by Scriberia"
   },
   {
     "objectID": "seminario_postulacion_fasn/index.html#análisis-de-datos-1",
     "href": "seminario_postulacion_fasn/index.html#análisis-de-datos-1",
     "title": "Seminario",
     "section": "3. Análisis de datos",
-    "text": "3. Análisis de datos\n\nReproducibilidad en ciencias del suelo\n\n\nLograr reproducibilidad en ciencias es un reto (Correndo et al. 2023)\n\n\n\n\nAgencias de financiamiento exigen aumentar transparencia(Bond-Lamberty, Smith, and Bailey 2016)\n\n\n\n\nInvestigación abierta, accesible, reutilizable y reproducible (Hall et al. 2022)"
+    "text": "3. Análisis de datos\nReproducibilidad en ciencias del suelo\n\n\nLograr reproducibilidad en ciencias es un reto (Correndo et al. 2023)\n\n\n\n\nAgencias de financiamiento exigen aumentar transparencia(Bond-Lamberty, Smith, and Bailey 2016)\n\n\n\n\nInvestigación abierta, accesible, reutilizable y reproducible (Hall et al. 2022)"
   },
   {
     "objectID": "seminario_postulacion_fasn/index.html#análisis-de-datos-2",
     "href": "seminario_postulacion_fasn/index.html#análisis-de-datos-2",
     "title": "Seminario",
     "section": "3. Análisis de datos",
-    "text": "3. Análisis de datos\n\nReproducibilidad en ciencias del suelo\n\n\n\n\n\n\nPaquete de R que contiene funciones para el análisis de datos de infiltración\n\n\n\n\nManuscrito enviado a SoftwareX"
+    "text": "3. Análisis de datos\nReproducibilidad en ciencias del suelo\n\n\n\n\n\n\nPaquete de R que contiene funciones para el análisis de datos de infiltración\n\n\n\n\nManuscrito enviado a SoftwareX"
   },
   {
     "objectID": "seminario_postulacion_fasn/index.html#section-1",
@@ -403,14 +403,14 @@
     "href": "seminario_postulacion_fasn/index.html#interdisciplina-y-colaboración-1",
     "title": "Seminario",
     "section": "Interdisciplina y colaboración",
-    "text": "Interdisciplina y colaboración\n\nNacional\n\n\nDepartamento de Ingeniería Hidráulica y Ambiental PUC\n\n\n\n\nDepartamento de Salud Pública PUC\n\n\n\n\nDepartamento de Ecosistemas y Medio Ambiente PUC\n\n\n\n\nInternacional\n\n\nCrop and Soil Sciences OSU\n\n\n\n\nWorldwide RLadies-Global"
+    "text": "Interdisciplina y colaboración\nNacional\n\n\nDepartamento de Ingeniería Hidráulica y Ambiental PUC\n\n\n\n\nDepartamento de Salud Pública PUC\n\n\n\n\nDepartamento de Ecosistemas y Medio Ambiente PUC\n\n\nInternacional\n\n\nCrop and Soil Sciences OSU\n\n\n\n\nWorldwide RLadies-Global"
   },
   {
     "objectID": "seminario_postulacion_fasn/index.html#impacto-de-la-investigación-1",
     "href": "seminario_postulacion_fasn/index.html#impacto-de-la-investigación-1",
     "title": "Seminario",
     "section": "Impacto de la investigación",
-    "text": "Impacto de la investigación\n\nDocencia\n\n\nICH3600 Biofísica Ambiental PUC\n\n\n\n\nGeología y Ciencias del Suelo\n\n\n\n\nNuevo curso: Física de Suelos\n\n\n\n\nSeminario postgrado programación R y Python\n\n\n\n\nVinculación con el medio\n\n\nR-Ladies Global\n\n\n\n\nLaboratorio de Biofísica de Suelo"
+    "text": "Impacto de la investigación\nDocencia\n\n\nICH3600 Biofísica Ambiental PUC\n\n\n\n\nGeología y Ciencias del Suelo\n\n\n\n\nNuevo curso: Física de Suelos\n\n\n\n\nSeminario postgrado programación R y Python\n\n\nVinculación con el medio\n\n\nR-Ladies Global\n\n\n\n\nLaboratorio de Biofísica de Suelo"
   },
   {
     "objectID": "seminario_postulacion_fasn/index.html#preguntas",
@@ -551,5 +551,12 @@
     "title": "Seminario",
     "section": "1. Física de suelos",
     "text": "1. Física de suelos\nSus efectos en el medioambiente 1\n\n\nCambio clímatico como driver en cambios de la física del suelo\n\n\n\n\nUrgencia de estudios pirohidrologícos\n\n\n\n\nTécnicas analíticas especializadas\n\n\n\n\nManuscrito en revisión 🤞, colaboración (Giraldo et al., 2024)\n\n\nAcevedo et al., 2023. Effect of data availability and pedotransfer estimates on water flow modelling in wildfire-affected soils"
+  },
+  {
+    "objectID": "seminario_postulacion_fasn/index.html#references",
+    "href": "seminario_postulacion_fasn/index.html#references",
+    "title": "Seminario",
+    "section": "References",
+    "text": "References\n\n\nsaryace.github.io/seminario_sacevedo\n\n\n\nBond-Lamberty, Ben, A Peyton Smith, and Vanessa Bailey. 2016. “Running an Open Experiment: Transparency and Reproducibility in Soil and Ecosystem Science.” Environmental Research Letters 11 (8): 084004. https://doi.org/10.1088/1748-9326/11/8/084004.\n\n\nCorrendo, Adrian A., Austin Pearce, Carl H. Bolster, John T. Spargo, Deanna Osmond, and Ignacio A. Ciampitti. 2023. “The Soiltestcorr r Package: An Accessible Framework for Reproducible Correlation Analysis of Crop Yield and Soil Test Data.” SoftwareX 21: 101275. https://doi.org/https://doi.org/10.1016/j.softx.2022.101275.\n\n\nHall, Caitlyn A., Sheila M. Saia, Andrea L. Popp, Nilay Dogulu, Stanislaus J. Schymanski, Niels Drost, Tim van Emmerik, and Rolf Hut. 2022. “A Hydrologists Guide to Open Science.” Hydrology and Earth System Sciences 26 (3): 647–64. https://doi.org/10.5194/hess-26-647-2022."
   }
 ]
