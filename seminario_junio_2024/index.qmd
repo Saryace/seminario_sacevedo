@@ -197,7 +197,7 @@ ggplot(data = data_pubs_titles,
 -   **Cambio clímatico** como driver en cambios de la física del suelo
 :::
 ::: {.fragment .fade-up}
--   Urgencia de estudios **pirohidrologícos**
+-   Urgencia de estudios **pirohidrológicos**
 ::: 
 ::: {.fragment .fade-up}
 -   Técnicas analíticas **especializadas**
