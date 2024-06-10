@@ -67,7 +67,7 @@
     "href": "seminario_junio_2024/index.html#física-de-suelos-6",
     "title": "Seminario",
     "section": "1. Física de suelos",
-    "text": "1. Física de suelos\nExperimental: nuevas metodologías 1\n\nCurvas de retención de humedad y conductividad hidráulicas\nLento de medir, complejo de muestrear\nCombinar equipos para aumentar resolución\n\n[Contreras et al., 2024. En preparación]"
+    "text": "1. Física de suelos\nExperimental: nuevas metodologías 1\n\nCurvas de retención de humedad y conductividad hidráulica\nLento de medir, complejo de muestrear\nCombinar equipos para aumentar resolución\n\n[Contreras et al., 2024. En preparación]"
   },
   {
     "objectID": "seminario_junio_2024/index.html#física-de-suelos-7",
@@ -558,5 +558,12 @@
     "title": "Seminario",
     "section": "References",
     "text": "References\n\n\nsaryace.github.io/seminario_sacevedo\n\n\n\nBond-Lamberty, Ben, A Peyton Smith, and Vanessa Bailey. 2016. “Running an Open Experiment: Transparency and Reproducibility in Soil and Ecosystem Science.” Environmental Research Letters 11 (8): 084004. https://doi.org/10.1088/1748-9326/11/8/084004.\n\n\nCorrendo, Adrian A., Austin Pearce, Carl H. Bolster, John T. Spargo, Deanna Osmond, and Ignacio A. Ciampitti. 2023. “The Soiltestcorr r Package: An Accessible Framework for Reproducible Correlation Analysis of Crop Yield and Soil Test Data.” SoftwareX 21: 101275. https://doi.org/https://doi.org/10.1016/j.softx.2022.101275.\n\n\nHall, Caitlyn A., Sheila M. Saia, Andrea L. Popp, Nilay Dogulu, Stanislaus J. Schymanski, Niels Drost, Tim van Emmerik, and Rolf Hut. 2022. “A Hydrologists Guide to Open Science.” Hydrology and Earth System Sciences 26 (3): 647–64. https://doi.org/10.5194/hess-26-647-2022."
+  },
+  {
+    "objectID": "seminario_junio_2024/index.html#proponer-clasificación-y-cuantificación-de-la-capacidad-de-infiltración",
+    "href": "seminario_junio_2024/index.html#proponer-clasificación-y-cuantificación-de-la-capacidad-de-infiltración",
+    "title": "Seminario",
+    "section": "Proponer clasificación y cuantificación de la capacidad de infiltración",
+    "text": "Proponer clasificación y cuantificación de la capacidad de infiltración"
   }
 ]

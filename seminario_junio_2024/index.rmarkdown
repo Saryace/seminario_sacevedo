@@ -15,6 +15,7 @@ footer: saryace.github.io/seminario_sacevedo/seminario_junio_2024
 engine: knitr
 ---
 
+
 ## Acerca de mi 👩🏽‍💻
 ::::: {.columns style="text-align:center;margin-top:50px;"}
 
@@ -85,6 +86,7 @@ Siempre buscando cosas para aprender
 # [¿Qué me motiva a estar acá hoy?]{.r-fit-text} {background-color="#40666e"} 
 
 ## Mis líneas de investigación
+
 ```{r}
 library(scholar)
 library(tidyverse)
@@ -113,6 +115,7 @@ ggplot(data = data_pubs_titles,
   theme_void() +
   theme(plot.background = element_rect(fill = "transparent"))
 ```
+
 
 # [Desenredar la relación suelo-agua]{.r-fit-text style="color: white; font-size: 150px; background-color:#40666e;"} {background-image="images/agua_suelo.jpeg" background-size="100%" background-opacity="0.5"}
 
@@ -262,6 +265,7 @@ ggplot(data = data_pubs_titles,
 
 ## Algo de información oficial
 
+
 ```{r}
 library(sf)
 library(janitor)
@@ -299,7 +303,9 @@ areas_verdes %>%
   footnote(symbol = "Fuente: Minvu vía Observatorio de Ciudades UC, 2017")
 
 ```
+
 ## Algo de información oficial
+
 ```{r}
 library(sf)
 library(mapview)
@@ -316,7 +322,9 @@ ggplot(mapa_areas_verdes %>%
   theme_void()
 ```
 
+
 ## Comparación con datos abiertos OSM
+
 
 ```{r}
 library(greenR)
@@ -325,15 +333,18 @@ green_areas_data <- dato_stgo$green_areas
 visualize_green_spaces(green_areas_data)
 ```
 
+
 ## Proponer clasificación y cuantificación de la capacidad de infiltración
 
 ![](images/resumen_fondecyt.png){fig-align="center"}
 
 ## Entendimiento de las propiedades via clustering
 
+
 ```{r}
 green_space_clustering(green_areas_data, num_clusters = 3)
 ```
+
 
 ## 3. Análisis de datos^[[The Turing Way project illustration by Scriberia](10.5281/zenodo.3332807)] {background-image="https://the-turing-way.netlify.app/_images/reproducibility.jpg" background-size="50%"}
 
@@ -407,6 +418,7 @@ green_space_clustering(green_areas_data, num_clusters = 3)
 
 ### Temperaturas superficiales promedio Enero 2012 (izq.) vs. 2022 (der.)
 
+
 ```{r}
 library(leaflet)
 library(leaflet.extras2)
@@ -435,6 +447,7 @@ leaflet() %>%
   setView(lng=-70.6505019, lat=-33.4378234, zoom= 11)
 
 ```
+
 
 ## Cosas a futuro: comparar con otras ciudades
 
