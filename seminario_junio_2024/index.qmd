@@ -2,6 +2,7 @@
 title: Seminario
 subtitle: Desenredando la relación suelo-agua
 format: clean-revealjs
+always_allow_html: yes
 author:
   - name: Dra. Sara E. Acevedo
     orcid: 0000-0003-3203-2106
