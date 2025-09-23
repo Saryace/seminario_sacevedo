@@ -1,0 +1,262 @@
+---
+title: Seminario
+subtitle: Desenredando la relación suelo-agua
+format: clean-revealjs
+always_allow_html: yes
+author:
+  - name: Dra. Sara E. Acevedo
+    orcid: 0000-0003-3203-2106
+    email: seaceved@uc.cl
+    affiliations: Pontificia Universidad Católica de Chile
+bibliography: references.bib
+footer: saryace.github.io/seminario_sacevedo/seminario_2025_2026
+engine: knitr
+---
+
+## Acerca de mi 👩🏽‍💻
+::::: {.columns style="text-align:center;margin-top:50px;"}
+
+:::: {.column width="50%" style="margin-top:50px"}
+::: {.r-stack}
+![](images/primera.png){.fragment .fade-in-then-semi-out fragment-index=1 style="width:70%;transform:rotate(-5deg);" fig-alt="Torres del Paine"}
+
+![](images/segunda.jpeg){.fragment .fade-in-then-semi-out fragment-index=2 style="transform:rotate(5deg);" fig-alt="Museo del suelo"}
+
+![](images/tercera.png){.fragment .fade-in-then-semi-out fragment-index=3 style="transform:rotate(-1deg);" fig-alt="Muestreando"}
+
+![](images/cuarta.jpeg){.fragment .fade-in-then-semi-out fragment-index=4 style="transform:rotate(1.5deg);" fig-alt="Clases Biofisica Ambiental"}
+
+![](images/china.jpeg){.fragment .fade-in fragment-index=5 style="transform:rotate(-3.5deg);" fig-alt="China"}
+:::
+::::
+
+:::: {.column width="50%"  style="margin-top:25px"}
+::: {.fragment fragment-index=1}
+Química mención Analítica y Ambiental **[PUC](https://quimica.uc.cl/)**
+:::
+::: {.fragment fragment-index=2}
+
+Master en Suelos y Biogeoquímica **[UC-Davis](https://www.ucdavis.edu/graduate-programs/soils-and-biogeochemistry)**
+Doctora en Ciencias de la Ingeniería  **[PUC](https://www.ing.uc.cl/hidraulica-y-ambiental/)**
+:::
+::: {.fragment fragment-index=6}
+
+Profesora Asistente FASN-UC / Ing. Recursos Naturales
+
+:::
+::::
+
+:::::
+
+## Acerca de mi 👩🏽‍💻
+::::: {.columns style="text-align:center;margin-top:50px;"}
+
+:::: {.column width="50%" style="margin-top:50px"}
+::: {.r-stack}
+![](images/sssa.jpeg){.fragment .fade-in-then-semi-out fragment-index=1 style="width:70%;transform:rotate(-5deg);" fig-alt="SSSA"}
+
+![](images/wageningen.jpeg){.fragment .fade-in-then-semi-out fragment-index=2 style="transform:rotate(5deg);" fig-alt="wageningen"}
+
+![](images/rladies_chile.png){.fragment .fade-in-then-semi-out fragment-index=3 style="transform:rotate(-1deg);" fig-alt="rladies"}
+
+![](images/lab.jpeg){.fragment .fade-in-then-semi-out fragment-index=4 style="transform:rotate(1.5deg);" fig-alt="lab"}
+
+![](images/fukushima.jpeg){.fragment .fade-in fragment-index=5 style="transform:rotate(-3.5deg);" fig-alt="youtube"}
+:::
+::::
+
+:::: {.column width="50%"  style="margin-top:25px"}
+::: {.fragment fragment-index=1}
+Me gusta investigar, educar y divulgar 
+:::
+::: {.fragment fragment-index=2}
+Academia y extracurricular
+:::
+::: {.fragment fragment-index=6}
+Siempre buscando cosas para aprender
+:::
+::::
+
+:::::
+
+# [¿A qué me dedico?]{.r-fit-text} {background-color="#40666e"} 
+
+## Mis líneas de investigación
+```{r}
+library(scholar)
+library(tidyverse)
+library(tidytext)
+library(ggwordcloud)
+library(gtExtras)
+
+gs_id <- "WJqqnIQAAAAJ&hl"
+
+pubs <- get_publications(gs_id)
+
+data_pubs_titles <-
+pubs %>% 
+  select(title) %>% 
+  unnest_tokens(word, title) %>% 
+  anti_join(get_stopwords()) %>% 
+  anti_join(get_stopwords(lan = "es")) %>% 
+  count(word, sort = TRUE)  
+
+ggplot(data = data_pubs_titles, 
+       aes(label = word, size = n, col = as.character(n))) + 
+  geom_text_wordcloud(rm_outside = TRUE, max_steps = 1,
+                      grid_size = 1, eccentricity = .9)+
+  scale_size_area(max_size = 14)+
+  scale_color_brewer(palette = "Paired", direction = -1) +
+  theme_void() +
+  theme(plot.background = element_rect(fill = "transparent"))
+```
+
+# [Desenredar la relación suelo-agua]{.r-fit-text style="color: white; font-size: 150px; background-color:#40666e;"} {background-image="images/agua_suelo.jpeg" background-size="100%" background-opacity="0.5"}
+
+# Mis líneas de investigación {background-color="#40666e"}
+
+::: {.incremental}
+
+1.   Física de suelos 👩🏽‍🔬
+2.   Suelos urbanos 🏙️💧🌱
+3.   Análisis de datos y ciencia reproducible 👩🏽‍💻
+
+:::
+
+
+## Física de suelos {background-image="images/building.png" background-size="60%"}
+### [Acevedo et al. (2022) Elementa: Science of the Anthropocene](https://doi.org/10.1525/elementa.2022.00043)
+
+## Física de suelos
+::: {.fragment .fade-up}
+-   **Nuevas** tecnologías 
+:::
+::: {.fragment .fade-up}
+-   Aumento del **volumen** de datos 
+::: 
+::: {.fragment .fade-up}
+-   Necesidad de sensores de bajo costo
+::: 
+
+## 2. Suelos urbanos {background-image="images/urban_concept.png" background-size="30%"}
+### Urbanización - Requerimientos hídricos - Salud del suelo - Metales Pesados
+
+## 2. Suelos urbanos 
+
+::: {.fragment .fade-up}
+-   Suelos **homogéneos** en contextos **heterogéneos**
+:::
+::: {.fragment .fade-up}
+-   **Urbanización** es un driver en la pedogénesis de suelos urbanos
+::: 
+::: {.fragment .fade-up}
+-   Suelos sanos **amortiguan** el requerimiento hídrico 
+::: 
+::: {.fragment .fade-up}
+-   El uso de aguas grises **potencialmente** impacta en las propiedades físicas 
+::: 
+::: {.fragment .fade-up}
+-   Funcionalidad de suelos en la ciudad
+::: 
+
+
+## Reproducibilidad en ciencias del suelo {background-image="images/culture.jpg" background-size="55%"}
+### [The Alan Turing Institute](https://www.turing.ac.uk/about-us/impact/changing-culture-data-science)
+
+## Reproducibilidad en ciencias del suelo
+
+::: {.fragment .fade-up}
+-   Lograr reproducibilidad en ciencias es un **reto** 
+:::
+::: {.fragment .fade-up}
+-   Agencias de financiamiento exigen aumentar **transparencia** 
+::: 
+::: {.fragment .fade-up}
+-   Investigación **abierta, accesible, reutilizable y reproducible** 
+::: 
+
+
+## Colaboraciones
+
+::: {.fragment .fade-up}
+-   [**CEDEUS**](https://www.cedeus.cl/pd-sara-acevedo/) 
+:::
+::: {.fragment .fade-up}
+-   [**RLadies-Chile**](https://rladies.org/about-us/global-team/)
+::: 
+
+::: {.fragment .fade-up}
+-   [**RSE Council**](https://researchsoftware.org/council.html)
+::: 
+
+::: {.fragment .fade-up}
+-   [**Altiplano Wetlands**](https://altiplanowetlands.cl/team)
+::: 
+
+## 
+```{r}
+#| echo: false
+library(scholarnetwork)
+library(igraph)
+ 
+d <- extractNetwork(id="WJqqnIQAAAAJ&hl", n=500)
+plotNetwork(d$nodes, d$edges, file="network.html")
+
+library(ggplot2)
+# cleaning network data
+network <- graph_from_data_frame(d$edges, directed=FALSE)
+set.seed(123)
+l <- layout.fruchterman.reingold(network, niter=1500) # layout
+fc <- walktrap.community(network) # community detection
+ 
+# node locations
+nodes <- data.frame(l); names(nodes) <- c("x", "y")
+nodes$cluster <- factor(fc$membership)
+nodes$label <- fc$names
+nodes$degree <- degree(network)
+ 
+# edge locations
+edgelist <- get.edgelist(network, names=FALSE)
+edges <- data.frame(nodes[edgelist[,1],c("x", "y")], nodes[edgelist[,2],c("x", "y")])
+names(edges) <- c("x1", "y1", "x2", "y2")
+ 
+# and now visualizing it...
+p <- ggplot(nodes, aes(x=x, y=y, color=cluster, label=label, size=degree))
+pq <- p + geom_text(color="black", aes(label=label, size=degree),
+                    show_guide=FALSE) +
+  # nodes
+  geom_point(color="grey20", aes(fill=cluster),
+             shape=21, show_guide=FALSE, alpha=1/2) +
+  # edges
+  geom_segment(
+    aes(x=x1, y=y1, xend=x2, yend=y2, label=NA),
+    data=edges, size=0.25, color="grey20", alpha=1/5) +
+  ## note that here I add a border to the points
+  scale_fill_discrete(labels=labels) +
+  scale_size_continuous(range = c(5, 8)) +
+  theme(
+    panel.background = element_rect(fill = "white"),
+    plot.background = element_rect(fill="white"),
+    axis.line = element_blank(), axis.text = element_blank(),
+    axis.ticks = element_blank(),
+    axis.title = element_blank(), panel.border = element_blank(),
+    panel.grid.major = element_blank(),
+    panel.grid.minor = element_blank(),
+    legend.background = element_rect(colour = F, fill = "black"),
+    legend.key = element_rect(fill = "black", colour = F),
+    legend.title = element_text(color="white"),
+    legend.text = element_text(color="white")
+  ) +
+  ## changing size of points in legend
+  guides(fill = guide_legend(override.aes = list(size=5)))
+ 
+pq
+```
+
+## Donde contactarme 👩🏽‍💻
+
+-   Me demoro en responder correos 🙇🏽‍♀️
+-   En instagram: *soilbiophysicsgirls* 
+-   Web: saryace.github.io
+
+# [Gracias 👩🏽‍💻]{.r-fit-text style="color: white; font-size: 150px; background-color:#40666e;"} {background-image="images/agua_suelo.jpeg" background-size="100%" background-opacity="0.5"}

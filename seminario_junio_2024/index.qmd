@@ -8,10 +8,8 @@ author:
     orcid: 0000-0003-3203-2106
     email: seaceved@uc.cl
     affiliations: Pontificia Universidad Católica de Chile
-date: "10/06/2024"
-date-format: "iso"
 bibliography: references.bib
-footer: saryace.github.io/seminario_sacevedo/seminario_junio_2024
+footer: saryace.github.io/seminario_sacevedo/seminario_2025_2026
 engine: knitr
 ---
 
@@ -28,7 +26,7 @@ engine: knitr
 
 ![](images/cuarta.jpeg){.fragment .fade-in-then-semi-out fragment-index=4 style="transform:rotate(1.5deg);" fig-alt="Clases Biofisica Ambiental"}
 
-![](images/quinta.jpeg){.fragment .fade-in fragment-index=5 style="transform:rotate(-3.5deg);" fig-alt="Chicago Posit Conf"}
+![](images/china.jpeg){.fragment .fade-in fragment-index=5 style="transform:rotate(-3.5deg);" fig-alt="China"}
 :::
 ::::
 
@@ -43,8 +41,8 @@ Doctora en Ciencias de la Ingeniería  **[PUC](https://www.ing.uc.cl/hidraulica-
 :::
 ::: {.fragment fragment-index=6}
 
-Profesora Asistente FASNA - Carrera Ing. Recursos Naturales
-Investigadora CEDEUS
+Profesora Asistente FASNA - Ing. Recursos Naturales
+
 **[CEDEUS](https://www.cedeus.cl/pd-sara-acevedo/)** 
 :::
 ::::
@@ -122,13 +120,10 @@ ggplot(data = data_pubs_titles,
 
 1.   Física de suelos 👩🏽‍🔬
 2.   Suelos urbanos 🏙️💧🌱
-3.   Análisis de datos 👩🏽‍💻
+3.   Análisis de datos y ciencia reproducible 👩🏽‍💻
 
 :::
 
-## 1. Física de suelos
-
-*La física del suelo es el estudio de las fases sólida, líquida y gaseosa de los suelos y de sus interacciones. La textura, la estructura y la densidad aparente del suelo reflejan cómo se combinan las partículas minerales y orgánicas para forma espacios porosos.*
 
 ## 1. Física de suelos {background-image="images/building.png" background-size="55%"}
 ### Enfoque conceptual ^[[Acevedo et al., 2022. How does building healthy soils impact sustainable use of water resources in irrigated agriculture?](https://doi.org/10.1525/elementa.2022.00043)]
@@ -260,80 +255,6 @@ ggplot(data = data_pubs_titles,
 -   Efecto de las **aguas grises** en las propiedades del suelo
 ::: 
 
-## Algo de información oficial
-
-```{r}
-library(sf)
-library(janitor)
-library(tidyverse)
-library(kableExtra)
-
-# https://ideocuc-ocuc.hub.arcgis.com/search?collection=Dataset
-# datos enero 2020
-datos_urbanos <- read_sf("datos/sup_areas_verdes_stgo.geojson")
-
-areas_verdes <- 
-datos_urbanos %>%
-  as_tibble() %>%
-  mutate(clase = case_when(str_detect(clase, "PARQUE") ~ "PARQUE",
-                           .default = clase)) %>%
-  group_by(clase, estado_2) %>% 
-  summarise(area = sum(area_m2))%>% 
-  ungroup() 
-
-areas_verdes %>% 
-  mutate(estado = case_match(estado_2,
-      "BUEN" ~ "Buen estado",
-      "MAL" ~ "Mal estado")) %>% 
-  group_by(clase) %>% 
-  mutate(area_p = round(area * 100 / sum(area), 2)) %>% 
-  mutate(clase = paste(clase,estado)) %>% 
-  select(-estado, -estado_2, clase, area_p, area) %>% 
-  kable(booktabs = T, escape = F, align = "c",
-        col.names = c("Estado","metros cuadrados", "%"),
-        caption = "Análisis calidad estado plazas") %>%
-  kable_classic(
-    full_width = F,
-    position = "center", font_size = 20
-  ) %>% 
-  footnote(symbol = "Fuente: Minvu vía Observatorio de Ciudades UC, 2017")
-
-```
-## Algo de información oficial
-```{r}
-library(sf)
-library(mapview)
-mapa_areas_verdes <- read_sf("datos/sup_areas_verdes_stgo.geojson")
-
-ggplot(mapa_areas_verdes %>% 
-       mutate(estado = case_match(estado_2,
-      "BUEN" ~ "Buen estado",
-      "MAL" ~ "Mal estado")) ) + 
-  geom_sf(aes(fill = estado)) +
-  scale_fill_manual(values = c("#00b159", "#f37735")) +
-  labs(fill=NULL, caption = "Datos: Observatorio de Ciudades UC - Minvu 2017\n
-       Mapa por Sara Acevedo") +
-  theme_void()
-```
-
-## Comparación con datos abiertos OSM
-
-```{r}
-library(greenR)
-dato_stgo <- get_osm_data("Santiago,Chile")
-green_areas_data <- dato_stgo$green_areas
-visualize_green_spaces(green_areas_data)
-```
-
-## Proponer clasificación y cuantificación de la capacidad de infiltración
-
-![](images/resumen_fondecyt.png){fig-align="center"}
-
-## Entendimiento de las propiedades via clustering
-
-```{r}
-green_space_clustering(green_areas_data, num_clusters = 3)
-```
 
 ## 3. Análisis de datos^[[The Turing Way project illustration by Scriberia](10.5281/zenodo.3332807)] {background-image="https://the-turing-way.netlify.app/_images/reproducibility.jpg" background-size="50%"}
 
@@ -351,90 +272,6 @@ green_space_clustering(green_areas_data, num_clusters = 3)
 -   Investigación **abierta, accesible, reutilizable y reproducible** [@Hall2022]
 ::: 
 
-
-## 3. Análisis de datos
-### Reproducibilidad en ciencias del suelo
-
-:::: {.columns}
-
-::: {.column width="30%"}
-![](images/hexsticker.jpeg)
-:::
-
-::: {.column width="70%"}
-
-::: {.fragment .fade-up}
--   Paquete de R que contiene funciones para el análisis de datos de infiltración
-::: 
-
-::: {.fragment .fade-up}
--   Capacida de replicar y reproducir datos de infiltración en un framework sencillo basado en {tidyverse}
-::: 
-
-::: {.fragment .fade-up}
--   Manuscrito en revisión 🤞 (Giraldo et al., 2024) [SoftwareX](https://www.sciencedirect.com/journal/softwarex) 
-::: 
-:::
-
-::::
-
-## 
-
-![](https://the-turing-way.netlify.app/_images/reproducible-definition-grid.svg){fig-align="center"}
-
-## Paquetes de R disponibles y colaboraciones
-
--   [InfiltrodiscR](https://github.com/biofisicasuelos/infiltrodiscR)
--   [ggsoiltexture](https://github.com/Saryace/ggsoiltexture) 
--   Iniciativa [OpenLifeScience](https://openlifesci.org/) - colaboración 
--   🤗💕 gracias a los comentarios recibidos estas semanas
--   Agradecimientos en futuras publicaciones {testers}
-
-
-## Paquetes de R disponibles
-
-### Datos reales 🐈
-![](images/triangulo_gato.gif){fig-align="center"}
-
-
-## Cosas a futuro: 
-
-### Conexión planta - suelo
-
-![](images/potencial.png){fig-align="center" width=60% height=60%}
-
-## Cosas a futuro: ciudad cambiante
-
-### Temperaturas superficiales promedio Enero 2012 (izq.) vs. 2022 (der.)
-
-```{r}
-library(leaflet)
-library(leaflet.extras2)
-library(terra)
-# Raster Modis promedio superficie entre el 1 y 31 enero 2012
-temp2012 <- rast("rasters/MODIS_LST_Santiago_Period1_2012.tif") 
-# Raster Modis promedio superficie entre el 1 y 31 enero 2022
-temp2022 <- rast("rasters/MODIS_LST_Santiago_Period2_2022.tif") 
-
-pal <- colorNumeric(c("lightyellow", "orange", "red"), values(temp2022),
-                    na.color = "transparent")
-
-leaflet() %>%
-  addMapPane("right", zIndex = 0) %>%
-  addMapPane("left",  zIndex = 0) %>%
-  addTiles(group = "base", layerId = "baseid1", options = pathOptions(pane = "right")) |> 
-  addTiles(group = "base", layerId = "baseid2", options = pathOptions(pane = "left")) %>%
-   addRasterImage(x = temp2012, colors = pal,options = leafletOptions(pane = "left"), group = "2012", opacity = 0.5) %>%
-  addRasterImage(x = temp2022, colors = pal,options = leafletOptions(pane = "right"), group = "2022", opacity = 0.5) %>%
-  addLayersControl(overlayGroups = c("temp2012", "temp2022")) |>  
-  addLegend(pal = pal, values = values(temp2022),
-            title = "Surface temp") %>%
-  addSidebyside(layerId = "sidecontrols",
-                rightId = "baseid1",
-                leftId  = "baseid2") %>%
-  setView(lng=-70.6505019, lat=-33.4378234, zoom= 11)
-
-```
 
 ## Cosas a futuro: comparar con otras ciudades
 
@@ -458,9 +295,8 @@ leaflet() %>%
 
 ## Donde contactarme 👩🏽‍💻
 
--   *saryace* en instagram y twitter
--   Colaboro con el instagram *soilbiophysicslab* 
--   saryace.github.io
+-   En instagram: *soilbiophysicsgirls* 
+-   Web: saryace.github.io
 
 # [Gracias 👩🏽‍💻]{.r-fit-text style="color: white; font-size: 150px; background-color:#40666e;"} {background-image="images/agua_suelo.jpeg" background-size="100%" background-opacity="0.5"}
 
