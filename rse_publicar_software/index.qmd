@@ -1,0 +1,181 @@
+---
+title: RSE Chile | Software para Investigación
+subtitle: Cómo publicar un paper sobre software
+format: clean-revealjs
+always_allow_html: yes
+author:
+  - name: Dra. Sara E. Acevedo
+    orcid: 0000-0003-3203-2106
+    email: seaceved@uc.cl
+    affiliations: Pontificia Universidad Católica de Chile
+footer: saryace.github.io/seminario_sacevedo/rse_publicar_software
+engine: knitr
+---
+
+## Acerca de mi 👩🏽‍💻
+::::: {.columns style="text-align:center;margin-top:50px;"}
+
+:::: {.column width="50%" style="margin-top:50px"}
+::: {.r-stack}
+![](images/primera.png){.fragment .fade-in-then-semi-out fragment-index=1 style="width:70%;transform:rotate(-5deg);" fig-alt="Torres del Paine"}
+
+![](images/segunda.jpeg){.fragment .fade-in-then-semi-out fragment-index=2 style="transform:rotate(5deg);" fig-alt="Museo del suelo"}
+
+![](images/tercera.png){.fragment .fade-in-then-semi-out fragment-index=3 style="transform:rotate(-1deg);" fig-alt="Muestreando"}
+
+![](images/cuarta.jpeg){.fragment .fade-in-then-semi-out fragment-index=4 style="transform:rotate(1.5deg);" fig-alt="Clases Biofisica Ambiental"}
+
+![](images/china.jpeg){.fragment .fade-in fragment-index=5 style="transform:rotate(-3.5deg);" fig-alt="China"}
+:::
+::::
+
+:::: {.column width="50%"  style="margin-top:25px"}
+::: {.fragment fragment-index=1}
+Química mención Analítica y Ambiental **[PUC](https://quimica.uc.cl/)**
+:::
+::: {.fragment fragment-index=2}
+
+Master en Suelos y Biogeoquímica **[UC-Davis](https://www.ucdavis.edu/graduate-programs/soils-and-biogeochemistry)**
+Doctora en Ciencias de la Ingeniería  **[PUC](https://www.ing.uc.cl/hidraulica-y-ambiental/)**
+:::
+::: {.fragment fragment-index=6}
+
+Profesora Asistente FASN-UC / Ing. Recursos Naturales
+
+:::
+::::
+
+:::::
+
+## Acerca de mi 👩🏽‍💻
+::::: {.columns style="text-align:center;margin-top:50px;"}
+
+:::: {.column width="50%" style="margin-top:50px"}
+::: {.r-stack}
+![](images/sssa.jpeg){.fragment .fade-in-then-semi-out fragment-index=1 style="width:70%;transform:rotate(-5deg);" fig-alt="SSSA"}
+
+![](images/wageningen.jpeg){.fragment .fade-in-then-semi-out fragment-index=2 style="transform:rotate(5deg);" fig-alt="wageningen"}
+
+![](images/rladies_chile.png){.fragment .fade-in-then-semi-out fragment-index=3 style="transform:rotate(-1deg);" fig-alt="rladies"}
+
+![](images/lab.jpeg){.fragment .fade-in-then-semi-out fragment-index=4 style="transform:rotate(1.5deg);" fig-alt="lab"}
+
+![](images/fukushima.jpeg){.fragment .fade-in fragment-index=5 style="transform:rotate(-3.5deg);" fig-alt="youtube"}
+:::
+::::
+
+:::: {.column width="50%"  style="margin-top:25px"}
+::: {.fragment fragment-index=1}
+Me gusta investigar, educar y divulgar 
+:::
+::: {.fragment fragment-index=2}
+Academia y extracurricular
+:::
+::: {.fragment fragment-index=6}
+Siempre buscando cosas para aprender
+:::
+::::
+
+:::::
+
+# [¿A qué me dedico?]{.r-fit-text} {background-color="#40666e"} 
+
+
+# [Desenredar la relación suelo-agua]{.r-fit-text style="color: white; font-size: 150px; background-color:#40666e;"} {background-image="images/agua_suelo.jpeg" background-size="100%" background-opacity="0.5"}
+
+# Mis líneas de investigación {background-color="#40666e"}
+
+::: {.incremental}
+
+1.   Física de suelos 👩🏽‍🔬
+2.   Suelos urbanos 🏙️💧🌱
+3.   Análisis de datos y ciencia reproducible 👩🏽‍💻
+
+:::
+
+## Reproducibilidad en ciencias del suelo {background-image="images/culture.jpg" background-size="55%"}
+#### [The Alan Turing Institute](https://www.turing.ac.uk/about-us/impact/changing-culture-data-science)
+
+## Reproducibilidad en ciencias del suelo
+
+::: {.fragment .fade-up}
+-   Lograr reproducibilidad en ciencias es un **reto** 
+:::
+::: {.fragment .fade-up}
+-   Agencias de financiamiento exigen aumentar **transparencia** 
+::: 
+::: {.fragment .fade-up}
+-   Investigación **abierta, accesible, reutilizable y reproducible** 
+::: 
+
+## Donde aprendo?
+
+-   [Open Seeds program](https://we-are-ols.org/openseeds/)
+-   Programa para Open Science ambassadors 
+-   [The Turing Way](https://book.the-turing-way.org/)
+-   Handbook de ciencia ética, colaborativa y reproducible
+-   [Website RSE-Chile](https://rse-chile.github.io/)
+-   RSE Chile | Software para Investigación
+
+## Como nace ggsoiltexture {background-image="images/reprolab.jpg" background-size="40%"}
+
+## Como nace ggsoiltexture  
+
+::: {.incremental}
+
+1.   Nace de un problema
+2.   Se adapta como buena práctica
+3.   Queda el código disponible internamente 👩🏽‍💻
+4.   Mejor un paper!!!
+
+:::
+
+## ggsoiltexture como paper
+
+::: {.incremental}
+
+1.    Reconocimiento académico al desarrollo de código y software
+2.    Permite que el software sea citable con DOI
+3.    Favorece la transparencia y reproducibilidad en ciencias
+
+:::
+
+## Dónde publicar?
+
+::: {.incremental}
+
+1.    Reconocimiento académico tiene propias métricas (Qx, impacto, etc.)
+2.    Hay journals de software científico (SoftX)
+3.    Ver guía de [SSI](https://www.software.ac.uk/top-tip/which-journals-should-i-publish-my-software)
+
+:::
+
+## Consideraciones
+
+::: {.incremental}
+
+1.    Software Papers o Original Software Papers tienen formatos diferentes, ver con cada journal
+2.    El proceso de peer-review es idéntico 
+3.    Papers clásicos son la meta final de una investigación, con software es un hito
+4.    Romper el miedo! [substack  DarrenDahly](https://statsepi.substack.com/p/open-science-is-really-scary-yall)
+
+:::
+
+
+## Donde contactarme 👩🏽‍💻
+
+-   Me demoro en responder correos 🙇🏽‍♀️
+-   En instagram: *soilbiophysicsgirls* 
+-   Web: saryace.github.io
+-   [Google Scholar](https://scholar.google.com/citations?user=WJqqnIQAAAAJ&hl=en)
+
+## Acá los papers! 
+
+1. [Giraldo et al.,2024](https://doi.org/10.1016/j.softx.2024.101916)
+2. [Acevedo et al.,2025](https://doi.org/10.1016/j.softx.2025.102293)
+
+## 
+
+![](images/triangulo_gato.gif){fig-align="center"}
+
+# [Gracias 👩🏽‍💻]{.r-fit-text style="color: white; font-size: 150px; background-color:#40666e;"} {background-image="images/agua_suelo.jpeg" background-size="100%" background-opacity="0.5"}

@@ -754,5 +754,117 @@
     "title": "Seminario",
     "section": "",
     "text": "List of 2\n $ nodes:'data.frame':  46 obs. of  3 variables:\n  ..$ label : chr [1:46] \"A Vega\" \"C Avila\" \"C Ávila\" \"C Bonilla\" ...\n  ..$ degree: num [1:46] 6.17 5.43 2.3 21.38 18.25 ...\n  ..$ group : num [1:46] 2 4 4 4 4 3 4 4 4 2 ...\n $ edges:'data.frame':  201 obs. of  3 variables:\n  ..$ node1 : chr [1:201] \"C Giraldo\" \"L O'brien\" \"M Willaredt\" \"S Acevedo\" ...\n  ..$ node2 : chr [1:201] \"A Vega\" \"A Vega\" \"A Vega\" \"A Vega\" ...\n  ..$ weight: num [1:201] 0.167 0.167 0.167 1.083 0.2 ..."
+  },
+  {
+    "objectID": "rse_publicar_software/index.html#acerca-de-mi",
+    "href": "rse_publicar_software/index.html#acerca-de-mi",
+    "title": "RSE Chile | Software para Investigación",
+    "section": "Acerca de mi 👩🏽‍💻",
+    "text": "Acerca de mi 👩🏽‍💻\n\n\n\n\n\n\n\n\n\n\n\nQuímica mención Analítica y Ambiental PUC\n\n\nMaster en Suelos y Biogeoquímica UC-Davis Doctora en Ciencias de la Ingeniería PUC\n\n\nProfesora Asistente FASN-UC / Ing. Recursos Naturales"
+  },
+  {
+    "objectID": "rse_publicar_software/index.html#acerca-de-mi-1",
+    "href": "rse_publicar_software/index.html#acerca-de-mi-1",
+    "title": "RSE Chile | Software para Investigación",
+    "section": "Acerca de mi 👩🏽‍💻",
+    "text": "Acerca de mi 👩🏽‍💻\n\n\n\n\n\n\n\n\n\n\n\nMe gusta investigar, educar y divulgar\n\n\nAcademia y extracurricular\n\n\nSiempre buscando cosas para aprender"
+  },
+  {
+    "objectID": "rse_publicar_software/index.html#reproducibilidad-en-ciencias-del-suelo",
+    "href": "rse_publicar_software/index.html#reproducibilidad-en-ciencias-del-suelo",
+    "title": "RSE Chile | Software para Investigación",
+    "section": "Reproducibilidad en ciencias del suelo",
+    "text": "Reproducibilidad en ciencias del suelo\nThe Alan Turing Institute"
+  },
+  {
+    "objectID": "rse_publicar_software/index.html#reproducibilidad-en-ciencias-del-suelo-1",
+    "href": "rse_publicar_software/index.html#reproducibilidad-en-ciencias-del-suelo-1",
+    "title": "RSE Chile | Software para Investigación",
+    "section": "Reproducibilidad en ciencias del suelo",
+    "text": "Reproducibilidad en ciencias del suelo\n\n\nLograr reproducibilidad en ciencias es un reto\n\n\n\n\nAgencias de financiamiento exigen aumentar transparencia\n\n\n\n\nInvestigación abierta, accesible, reutilizable y reproducible"
+  },
+  {
+    "objectID": "rse_publicar_software/index.html#colaboraciones",
+    "href": "rse_publicar_software/index.html#colaboraciones",
+    "title": "RSE Chile | Software para Investigación",
+    "section": "Colaboraciones",
+    "text": "Colaboraciones"
+  },
+  {
+    "objectID": "rse_publicar_software/index.html#donde-contactarme",
+    "href": "rse_publicar_software/index.html#donde-contactarme",
+    "title": "RSE Chile | Software para Investigación",
+    "section": "Donde contactarme 👩🏽‍💻",
+    "text": "Donde contactarme 👩🏽‍💻\n\nMe demoro en responder correos 🙇🏽‍♀️\nEn instagram: soilbiophysicsgirls\nWeb: saryace.github.io\nGoogle Scholar"
+  },
+  {
+    "objectID": "rse_publicar_software/index.html#ciencia-reproducible",
+    "href": "rse_publicar_software/index.html#ciencia-reproducible",
+    "title": "RSE Chile | Software para Investigación",
+    "section": "Ciencia reproducible?",
+    "text": "Ciencia reproducible?"
+  },
+  {
+    "objectID": "rse_publicar_software/index.html#donde-aprendo",
+    "href": "rse_publicar_software/index.html#donde-aprendo",
+    "title": "RSE Chile | Software para Investigación",
+    "section": "Donde aprendo?",
+    "text": "Donde aprendo?\n\nOpen Seeds program\nPrograma para Open Science ambassadors\nThe Turing Way\nHandbook de ciencia ética, colaborativa y reproducible\nWebsite RSE-Chile\nRSE Chile | Software para Investigación"
+  },
+  {
+    "objectID": "rse_publicar_software/index.html#como-nace-ggsoiltexture",
+    "href": "rse_publicar_software/index.html#como-nace-ggsoiltexture",
+    "title": "RSE Chile | Software para Investigación",
+    "section": "Como nace ggsoiltexture",
+    "text": "Como nace ggsoiltexture"
+  },
+  {
+    "objectID": "rse_publicar_software/index.html#como-nace-ggsoiltexture-1",
+    "href": "rse_publicar_software/index.html#como-nace-ggsoiltexture-1",
+    "title": "RSE Chile | Software para Investigación",
+    "section": "Como nace ggsoiltexture",
+    "text": "Como nace ggsoiltexture\n\nNace de un problema\nSe adapta como buena práctica\nQueda el código disponible internamente 👩🏽‍💻\nMejor un paper!!!"
+  },
+  {
+    "objectID": "rse_publicar_software/index.html#ggsoiltexture-como-paper",
+    "href": "rse_publicar_software/index.html#ggsoiltexture-como-paper",
+    "title": "RSE Chile | Software para Investigación",
+    "section": "ggsoiltexture como paper",
+    "text": "ggsoiltexture como paper\n\nReconocimiento académico al desarrollo de código y software\nPermite que el software sea citable con DOI\nFavorece la transparencia y reproducibilidad en ciencias"
+  },
+  {
+    "objectID": "rse_publicar_software/index.html#dónde-publicar",
+    "href": "rse_publicar_software/index.html#dónde-publicar",
+    "title": "RSE Chile | Software para Investigación",
+    "section": "Dónde publicar?",
+    "text": "Dónde publicar?\n\nReconocimiento académico tiene propias métricas (Qx, impacto, etc.)\nHay journals de software científico (SoftX)\nVer guía de SSI"
+  },
+  {
+    "objectID": "rse_publicar_software/index.html#citas",
+    "href": "rse_publicar_software/index.html#citas",
+    "title": "RSE Chile | Software para Investigación",
+    "section": "Citas",
+    "text": "Citas"
+  },
+  {
+    "objectID": "rse_publicar_software/index.html#consideraciones",
+    "href": "rse_publicar_software/index.html#consideraciones",
+    "title": "RSE Chile | Software para Investigación",
+    "section": "Consideraciones",
+    "text": "Consideraciones\n\nSoftware Papers o Original Software Papers tienen formatos diferentes, ver con cada journal\nEl proceso de peer-review es idéntico\nPapers clásicos son la meta final de una investigación, con software es un hito\nRomper el miedo! substack DarrenDahly"
+  },
+  {
+    "objectID": "rse_publicar_software/index.html#acá-los-papers",
+    "href": "rse_publicar_software/index.html#acá-los-papers",
+    "title": "RSE Chile | Software para Investigación",
+    "section": "Acá los papers!",
+    "text": "Acá los papers!\n\nGiraldo et al.,2024\nAcevedo et al.,2025"
+  },
+  {
+    "objectID": "rse_publicar_software/index.html#rse-chile",
+    "href": "rse_publicar_software/index.html#rse-chile",
+    "title": "RSE Chile | Software para Investigación",
+    "section": "RSE-CHILE",
+    "text": "RSE-CHILE\n\nWebsite RSE-Chile"
   }
 ]
