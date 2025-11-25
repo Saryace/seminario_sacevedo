@@ -52,7 +52,7 @@ Profesora Asistente Facultad de Agronomía y Sistemas Naturales / Ing. en Recurs
 ## 
 
 ::: {#fig-suelos layout-ncol="2" layout-valign="center"}
-![Serie Santiago](images/urban_soil_a.JPG){#fig-A}
+![Serie Santiago](images/urban_soil_a.jpg){#fig-A}
 
 ![Centro de Santiago](images/urban_soil_b.jpg){#fig-B}
 
@@ -68,7 +68,7 @@ La compactación del suelo reduce la porosidad e infiltración. El tráfico peat
 ## Falta de datos
 
 ::: {#fig-suelosmap layout-ncol="2" layout-valign="center"}
-![Pantoja et al., 2025](images/urban-stgo-map.JPG){#fig-A}
+![Pantoja et al., 2025](images/urban-stgo-map.jpg){#fig-A}
 
 ![Acevedo et al., 2026](images/lack-data-compacted.png){#fig-B}
 
