@@ -11,7 +11,6 @@ author:
 footer: saryace.github.io/seminario_sacevedo/urban_challenges
 engine: knitr
 ---
-
 ## Acerca de mi 👩🏽‍💻
 
 ::: {.fragment fragment-index="1"}
@@ -27,7 +26,7 @@ Doctora en Ciencias de la Ingeniería [**PUC**](https://www.ing.uc.cl/hidraulica
 :::
 
 ::: {.fragment fragment-index="4"}
-Profesora Asistente Facultad de Agronomía y Sistemas Naturales / Ing. en Recursos Naturales
+Profesora Asistente, Facultad de Agronomía y Sistemas Naturales / Ing. en Recursos Naturales
 :::
 
 # [¿A qué me dedico?]{.r-fit-text} {background-color="#40666e"}
@@ -47,7 +46,7 @@ Profesora Asistente Facultad de Agronomía y Sistemas Naturales / Ing. en Recurs
 1.  Degradación de las funciones físicas
 2.  Falta de datos físicos y químicos
 3.  Falta de criterios taxonómicos
-4.  Las altas temperaturas del suelo urbano
+4.  Las altas temperaturas del suelo urbano 🌡️
 
 ## 
 
