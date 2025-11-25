@@ -68,7 +68,7 @@ La compactación del suelo reduce la porosidad e infiltración. El tráfico peat
 ## Falta de datos
 
 ::: {#fig-suelosmap layout-ncol="2" layout-valign="center"}
-![Pantoja et al., 2025](images/urban-stgo-map.jpg){#fig-A}
+![Pantoja et al., 2025](images/urban-stgo-map.JPG){#fig-A}
 
 ![Acevedo et al., 2026](images/lack-data-compacted.png){#fig-B}
 
