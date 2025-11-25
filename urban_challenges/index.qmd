@@ -76,7 +76,7 @@ La compactación del suelo reduce la porosidad e infiltración. El tráfico peat
 :::
 
 ::: {#fig-suelos layout-ncol="2" layout-valign="center"}
-![Serie Santiago](images/urban_soil_a.JPG){#fig-A}
+![Serie Santiago](images/urban_soil_a.jpg){#fig-A}
 
 ![Centro de Santiago](images/urban_soil_b.jpg){#fig-B}
 
