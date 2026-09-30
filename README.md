@@ -1,7 +1,8 @@
 # List of presentations 
 
-Acá puedes encontrar mis presentaciones en seminarios y congresos
-Here you can find my presentations from seminars and conferences
+:es: Acá puedes encontrar mis presentaciones en seminarios y congresos
+
+:us: Here you can find my presentations from seminars and conferences
 
 ![](ismc-photo.jpg)
 *International Soil Modelling Consortium Conference, Rio de Janeiro, Brazil 2026*
