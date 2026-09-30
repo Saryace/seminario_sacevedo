@@ -1,4 +1,12 @@
+
+![](ismc-photo.jpg)
+*International Soil Modelling Consortium Conference, Rio de Janeiro, Brazil 2026*
+
 ## 2026
+
+Presentation: Modeling urban soil physical processes: common challenges and emerging approaches, Sara E. Acevedo & Moreen Willaredt, International Soil Modelling Consortium Conference, Rio de Janeiro, Brazil 2026
+
+- Presentation [here](ISMC2026_Acevedo-Willaredt.pdf)
 
 Presentación Desafíos y oportunidades de investigación sobre física y química del suelo urbano, Seminario DIHA 2026
 
