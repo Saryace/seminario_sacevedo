@@ -1,3 +1,19 @@
+## 2026
+
+Presentación Desafíos y oportunidades de investigación sobre física y química del suelo urbano, Seminario DIHA 2026
+
+- Presentación [acá](https://saryace.github.io/seminario_sacevedo/urban_challenges)
+
+## 2025
+
+Presentación sobre mí 2025-2026
+
+- Presentación [acá](https://saryace.github.io/seminario_sacevedo/seminario_2025_2026)
+
+Presentación para RSE: Publicar nuestro software de investigación como artículo puede contribuir a que el trabajo de desarrollo de código en contextos académicos sea visible, citable y reconocido por la comunidad. Presentación de Sara Acevedo para la comunidad RSE-Chile
+
+- Presentación [acá](https://saryace.github.io/seminario_sacevedo/rse_publicar_software)
+
 ## 2024
 
 Presentación seminario como profesora asistente en el Departamento de Ecosistemas y Medioambiente :es: . Facultad de Agronomía y Sistemas Naturales UC.
