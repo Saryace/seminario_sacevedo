@@ -1048,5 +1048,138 @@
     "title": "Seminario DIHA",
     "section": "Referencias",
     "text": "Referencias\n\nEdmondson, J. L., Davies, Z. G., McCormack, S. A., Gaston, K. J., & Leake, J. R. (2011). Are soils in urban ecosystems compacted? A citywide analysis. Biology Letters, 7(5), 771–774. https://doi.org/10.1098/rsbl.2011.0260\nLeguédois, S., Séré, G., Auclerc, A., Cortet, J., Huot, H., Ouvrard, S., Watteau, F., Schwartz, C., & Morel, J. L. (2016). Modelling pedogenesis of Technosols. Geoderma, 262, 199–212. https://doi.org/10.1016/j.geoderma.2015.08.008"
+  },
+  {
+    "objectID": "ia-generativa-wids/index.html#acerca-de-mi",
+    "href": "ia-generativa-wids/index.html#acerca-de-mi",
+    "title": "Usando IA para visualización de datos reproducibles con R",
+    "section": "Acerca de mi 👩🏽‍💻",
+    "text": "Acerca de mi 👩🏽‍💻\n\n\n\n\n\n\n\n\n\nProfesora Asistente Facultad de Agronomía y Sistemas Naturales\n\n\nParte de RLadies Santiago y RSE-Chile\n\n\nInvestigadora CEDEUS"
+  },
+  {
+    "objectID": "ia-generativa-wids/index.html#título-de-diapositiva",
+    "href": "ia-generativa-wids/index.html#título-de-diapositiva",
+    "title": "Usando IA para visualización de datos reproducibles con R",
+    "section": "Título de diapositiva",
+    "text": "Título de diapositiva\n\nPunto 1\nPunto 2\nPunto 3"
+  },
+  {
+    "objectID": "ia-generativa-wids/index.html#diapositiva-con-fragmentos",
+    "href": "ia-generativa-wids/index.html#diapositiva-con-fragmentos",
+    "title": "Usando IA para visualización de datos reproducibles con R",
+    "section": "Diapositiva con fragmentos",
+    "text": "Diapositiva con fragmentos\n\n\nIdea principal 1\n\n\n\n\nIdea principal 2\n\n\n\n\nIdea principal 3"
+  },
+  {
+    "objectID": "ia-generativa-wids/index.html#diapositiva-en-dos-columnas",
+    "href": "ia-generativa-wids/index.html#diapositiva-en-dos-columnas",
+    "title": "Usando IA para visualización de datos reproducibles con R",
+    "section": "Diapositiva en dos columnas",
+    "text": "Diapositiva en dos columnas\n\n\nTexto o imagen a la izquierda\n\nTexto o imagen a la derecha"
+  },
+  {
+    "objectID": "ia-generativa-wids/index.html#diapositiva-con-código-r",
+    "href": "ia-generativa-wids/index.html#diapositiva-con-código-r",
+    "title": "Usando IA para visualización de datos reproducibles con R",
+    "section": "Diapositiva con código R",
+    "text": "Diapositiva con código R"
+  },
+  {
+    "objectID": "ia-generativa-wids/index.html#referencias",
+    "href": "ia-generativa-wids/index.html#referencias",
+    "title": "Usando IA para visualización de datos reproducibles con R",
+    "section": "Referencias",
+    "text": "Referencias"
+  },
+  {
+    "objectID": "ia-generativa-wids/index.html#donde-contactarme",
+    "href": "ia-generativa-wids/index.html#donde-contactarme",
+    "title": "Usando IA para visualización de datos reproducibles con R",
+    "section": "Donde contactarme 👩🏽‍💻",
+    "text": "Donde contactarme 👩🏽‍💻\n\nEn instagram: soilbiophysicsgirls\nWeb: saryace.github.io"
+  },
+  {
+    "objectID": "ia-generativa-wids/index.html#dos-verdades-y-una-mentira",
+    "href": "ia-generativa-wids/index.html#dos-verdades-y-una-mentira",
+    "title": "Usando IA para visualización de datos reproducibles con R",
+    "section": "Dos verdades y una mentira 👩🏽‍💻",
+    "text": "Dos verdades y una mentira 👩🏽‍💻\n\n\n\n\n\n\n\n\n\nMe encantan los gatos\n\n\nMe causa un poco de rechazo la IA en la investigación\n\n\nNunca he visitado Italia"
+  },
+  {
+    "objectID": "ia-generativa-wids/index.html#uso-responsable-de-la-ia-en-investigación",
+    "href": "ia-generativa-wids/index.html#uso-responsable-de-la-ia-en-investigación",
+    "title": "Usando IA para visualización de datos reproducibles con R",
+    "section": "Uso responsable de la IA en investigación",
+    "text": "Uso responsable de la IA en investigación\n\nEl código generado por IA puede tener más defectos que el humano. Si no entiendes cómo funciona, no podrás arreglarlo cuando falle\nLa IA puede reproducir código de otros sin citarlos. Hay demandas contra GitHub Copilot por los datos con que fue entrenado.\nSe puede exponer información privada y violar leyes de protección de datos. Además, entrenar y usar estos modelos consume mucha energía.\n\n\n\nFuente: Responsible use of AI in research software. Software Sustainability Institute (2026)."
+  },
+  {
+    "objectID": "ia-generativa-wids/index.html#cómo-usar-la-ia-de-forma-responsable",
+    "href": "ia-generativa-wids/index.html#cómo-usar-la-ia-de-forma-responsable",
+    "title": "Usando IA para visualización de datos reproducibles con R",
+    "section": "Cómo usar la IA de forma responsable",
+    "text": "Cómo usar la IA de forma responsable\n\nEl trabajo pasa de escribir código a revisarlo. Todo código generado se revisa y se prueba; el vibe coding queda solo para proyectos personales o de bajo riesgo.\nDeclarar dónde y cómo se usó la IA, en el README, en los scripts y en los manuscritos.\nLa autora responde por su software y sus resultados, aunque lo haya escrito una IA. Documentar bien facilita validar y reutilizar el trabajo.\n\n\n\nFuente: Responsible use of AI in research software. Software Sustainability Institute (2026)."
+  },
+  {
+    "objectID": "ia-generativa-wids/index.html#qué-es-un-llm",
+    "href": "ia-generativa-wids/index.html#qué-es-un-llm",
+    "title": "Usando IA para visualización de datos reproducibles con R",
+    "section": "¿Qué es un LLM?",
+    "text": "¿Qué es un LLM?\n\nPredice la siguiente palabra más probable, una y otra vez, hasta armar la respuesta.\nNo busca la respuesta en una base de datos ni en internet por defecto: la construye por probabilidad.\nAprendió patrones de enormes cantidades de texto, como quien reconoce un salón a oscuras porque ha visto miles.\n\n\n  🎲 Predecir la siguiente palabra\n  Para visualizar datos en R uso\n  \n  ↺ Reiniciar\n  \n\n\n\n\nFuente: Martínez-González, E. (2026). Introducción a los LLMs."
+  },
+  {
+    "objectID": "ia-generativa-wids/index.html#qué-es-un-token",
+    "href": "ia-generativa-wids/index.html#qué-es-un-token",
+    "title": "Usando IA para visualización de datos reproducibles con R",
+    "section": "¿Qué es un token?",
+    "text": "¿Qué es un token?\n\nEs la pieza mínima que procesa el modelo: una palabra, un pedazo de palabra o un signo.\nSe cobra por token, y los de salida cuestan más que los de entrada.\nEn general, el español usa más tokens que el inglés.\n\n\n  🧮 Escribe y mira los tokens (estimación)\n  \n  \n  \n\n\n\n\nFuente: Martínez-González, E. (2026). Introducción a los LLMs. El conteo de la demo es una aproximación."
+  },
+  {
+    "objectID": "ia-generativa-wids/index.html#qué-es-un-prompt",
+    "href": "ia-generativa-wids/index.html#qué-es-un-prompt",
+    "title": "Usando IA para visualización de datos reproducibles con R",
+    "section": "¿Qué es un prompt?",
+    "text": "¿Qué es un prompt?\nUn prompt es la instrucción que le damos al modelo: la tarea, el contexto y el formato en que esperamos la respuesta.\n\nSer claro y directo: si una persona sin contexto no entendería tu prompt, el modelo tampoco. “Haz un gráfico de barras horizontales con los km de ciclovía por comuna, ordenado de mayor a menor” funciona mejor que “Grafica los datos”.\nExplicar el por qué: dar la razón detrás ayuda al modelo a entender qué buscas.”Usa letra grande, porque el gráfico se proyectará en una sala” funciona mejor que solo “usa letra grande”.\n\n\n\nFuente: Anthropic. Prompting best practices."
+  },
+  {
+    "objectID": "ia-generativa-wids/index.html#mis-datos-son-privados",
+    "href": "ia-generativa-wids/index.html#mis-datos-son-privados",
+    "title": "Usando IA para visualización de datos reproducibles con R",
+    "section": "¿Mis datos son privados? 🔒",
+    "text": "¿Mis datos son privados? 🔒\n\nLo que pegas en un chat sale de tu computador y deja de estar bajo tu control.\nLa IA no necesita tus datos reales: le basta con conocer su estructura, es decir, los nombres de las columnas, los tipos de datos y algunos valores de ejemplo.\nCrea datos sintéticos: una base falsa, pequeña y con la misma estructura. Así el código que te devuelva la IA funcionará con tus datos reales sin cambios.\n\n\n\nFuente: UBC Library Research Commons (2025). Coding with ChatGPT."
+  },
+  {
+    "objectID": "ia-generativa-wids/index.html#datos-sintéticos-en-la-práctica",
+    "href": "ia-generativa-wids/index.html#datos-sintéticos-en-la-práctica",
+    "title": "Usando IA para visualización de datos reproducibles con R",
+    "section": "Datos sintéticos en la práctica",
+    "text": "Datos sintéticos en la práctica\n\nlibrary(tidyverse)\n\n# 1. Mira la estructura de tus datos reales (esto NO se comparte)\nglimpse(datos_reales)\n\n# 2. Crea una base sintética con las mismas columnas y tipos\nset.seed(123)\ndatos_sinteticos &lt;- tibble(\n  comuna    = sample(c(\"Santiago\", \"Maipú\", \"Ñuñoa\"), 30, replace = TRUE),\n  edad      = sample(18:80, 30, replace = TRUE),\n  ingreso   = round(rnorm(30, mean = 800000, sd = 200000)),\n  satisfecho = sample(c(\"Sí\", \"No\"), 30, replace = TRUE)\n)\n\n# 3. Comparte solo esto con la IA\nglimpse(datos_sinteticos)"
+  },
+  {
+    "objectID": "ia-generativa-wids/index.html#mis-datos-son-privados-pero-quiero-usar-ia",
+    "href": "ia-generativa-wids/index.html#mis-datos-son-privados-pero-quiero-usar-ia",
+    "title": "Usando IA para visualización de datos reproducibles con R",
+    "section": "¿Mis datos son privados? 🔒 Pero quiero usar IA!",
+    "text": "¿Mis datos son privados? 🔒 Pero quiero usar IA!\n\nLo que pegas en un chat sale de tu computador y deja de estar bajo tu control.\nLa IA no necesita tus datos reales: le basta con conocer su estructura, es decir, los nombres de las columnas, los tipos de datos y algunos valores de ejemplo.\nCrea datos sintéticos: una base falsa, pequeña y con la misma estructura. Así el código que te devuelva la IA funcionará con tus datos reales sin cambios.\n\n\n\nFuente: UBC Library Research Commons (2025). Coding with ChatGPT."
+  },
+  {
+    "objectID": "ia-generativa-wids/index.html#qué-es-un-prompt-1",
+    "href": "ia-generativa-wids/index.html#qué-es-un-prompt-1",
+    "title": "Usando IA para visualización de datos reproducibles con R",
+    "section": "¿Qué es un prompt?",
+    "text": "¿Qué es un prompt?\nUn prompt es la instrucción que le damos al modelo: la tarea, el contexto y el formato en que esperamos la respuesta.\n\nDar ejemplos y un rol: 3 a 5 ejemplos variados mejoran la precisión; una frase como “Eres experta en ggplot2” orienta las respuestas.\nDecir qué hacer, no qué evitar: “Usa la paleta viridis, apta para daltonismo” funciona mejor que “No uses rojo y verde”.\n\n\n\nFuente: Anthropic. Prompting best practices."
+  },
+  {
+    "objectID": "ia-generativa-wids/index.html#ejemplo-de-prompt",
+    "href": "ia-generativa-wids/index.html#ejemplo-de-prompt",
+    "title": "Usando IA para visualización de datos reproducibles con R",
+    "section": "Ejemplo de prompt",
+    "text": "Ejemplo de prompt\nPrompt: “Tengo una base con esta estructura: [pega el glimpse()]. Escribe código ggplot2 para comparar el ingreso por comuna.”\n\n\nFuente: UBC Library Research Commons (2025). Coding with ChatGPT."
+  },
+  {
+    "objectID": "ia-generativa-wids/index.html#repositorio-del-taller",
+    "href": "ia-generativa-wids/index.html#repositorio-del-taller",
+    "title": "Usando IA para visualización de datos reproducibles con R",
+    "section": "Repositorio del taller",
+    "text": "Repositorio del taller\ngithub.com/Saryace/ia-generativa-wids"
   }
 ]
