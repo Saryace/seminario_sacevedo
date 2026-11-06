@@ -1181,5 +1181,26 @@
     "title": "Usando IA para visualización de datos reproducibles con R",
     "section": "Repositorio del taller",
     "text": "Repositorio del taller\ngithub.com/Saryace/ia-generativa-wids"
+  },
+  {
+    "objectID": "ia-generativa-wids/index.html#más-allá-del-chat-web-tres-formas-de-usar-un-llm",
+    "href": "ia-generativa-wids/index.html#más-allá-del-chat-web-tres-formas-de-usar-un-llm",
+    "title": "Usando IA para visualización de datos reproducibles con R",
+    "section": "Más allá del chat web: tres formas de usar un LLM",
+    "text": "Más allá del chat web: tres formas de usar un LLM\n\nChat web (Claude, ChatGPT en el navegador): ideal para explorar y conversar, pero no para analizar miles de textos.\nAPI: el mismo modelo, llamado desde código. Permite automatizar y escalar, pero se paga por token.\nModelo local: un modelo abierto que corre en tu computador o en un servidor del laboratorio. Tus datos nunca salen de tu máquina.\n\n\n\nFuente: Andrews, M. J. Text analysis with LLMs, Part 1."
+  },
+  {
+    "objectID": "ia-generativa-wids/index.html#por-qué-un-modelo-local-en-ciencia",
+    "href": "ia-generativa-wids/index.html#por-qué-un-modelo-local-en-ciencia",
+    "title": "Usando IA para visualización de datos reproducibles con R",
+    "section": "¿Por qué un modelo local en ciencia? 🔒",
+    "text": "¿Por qué un modelo local en ciencia? 🔒\n\n\n\n\n\n\n\n\n\n\n\nChat web\nAPI\nLocal (Ollama)\n\n\n\n\nPrivacidad\nVan a un tercero\nVan a un tercero\nQuedan en tu equipo\n\n\nCosto\nSuscripción\nPor token (puede sumar miles de US$)\nSolo electricidad\n\n\nEscala\nTexto a texto\nAlta, pero el costo crece\nAlta, sin costo extra\n\n\nRequisito\nUn navegador\nProgramar un poco\nBuen hardware (GPU)\n\n\n\n\n\nPara un comité de ética, analizar texto confidencial localmente es como analizar datos numéricos confidenciales en tu propio computador.\n\n\n\nFuente: Andrews, M. J. Text analysis with LLMs, Part 1."
+  },
+  {
+    "objectID": "ia-generativa-wids/index.html#cómo-empezar-con-un-modelo-local",
+    "href": "ia-generativa-wids/index.html#cómo-empezar-con-un-modelo-local",
+    "title": "Usando IA para visualización de datos reproducibles con R",
+    "section": "Cómo empezar con un modelo local",
+    "text": "Cómo empezar con un modelo local\n\nInstala Ollama: software libre para Windows, macOS y Linux que corre Llama, Mistral, Gemma, DeepSeek y otros modelos.\nDescarga un modelo desde la terminal.\nÚsalo desde R con el paquete ellmer, igual que un chat, pero sin internet.\n\n\n\nollama serve\nollama pull llama3.3\n\n\nlibrary(ellmer)\nchat &lt;- chat_ollama(model = \"llama3.3\",\n  system_prompt = \"Eres experta en ggplot2\")\nchat$chat(\"Grafica el ingreso por comuna\")\n\n\n\n\nFuente: Andrews, M. J. Text analysis with LLMs, Part 1. Llama 3.3 pesa ~43 GB; para equipos modestos prueba modelos más pequeños."
   }
 ]

@@ -308,17 +308,20 @@ Fuente: [Andrews, M. J. *Text analysis with LLMs, Part 1*](https://www.mjandrews
 :::
 
 ## ¿Por qué un modelo local en ciencia? 🔒
+::: {style="font-size:0.6em"}
 
-|               | Chat web               | API                                | **Local (Ollama)**        |
-|---------------|------------------------|------------------------------------|---------------------------|
-| Privacidad    | Datos van a un tercero | Datos van a un tercero             | **Quedan en tu equipo**   |
-| Costo         | Suscripción            | Por token, puede llegar a miles de US\$ | **Solo electricidad** |
-| Escala        | Manual, texto a texto  | Alta, pero el costo crece          | **Alta, sin costo extra** |
-| Requisito     | Un navegador           | Programar un poco                  | **Buen hardware (GPU)**   |
+|            | Chat web          | API                      | **Local (Ollama)**      |
+|------------|-------------------|--------------------------|-------------------------|
+| Privacidad | Van a un tercero  | Van a un tercero         | **Quedan en tu equipo** |
+| Costo      | Suscripción       | Por token (puede sumar miles de US\$) | **Solo electricidad** |
+| Escala     | Texto a texto     | Alta, pero el costo crece | **Alta, sin costo extra** |
+| Requisito  | Un navegador      | Programar un poco        | **Buen hardware (GPU)** |
 
-: {tbl-colwidths="[16,24,32,28]" style="font-size:0.7em"}
+: {tbl-colwidths="[16,22,34,28]"}
 
-::: {.fragment}
+:::
+
+::: {.fragment style="font-size:0.7em"}
 Para un comité de ética, analizar texto confidencial localmente es como analizar datos numéricos confidenciales en tu propio computador.
 :::
 

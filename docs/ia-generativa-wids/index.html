@@ -455,6 +455,93 @@ Dra. Sara E. Acevedo <a href="https://orcid.org/0000-0003-3203-2106" class="quar
 <aside><div>
 <p>Fuente: <a href="https://ubc-library-rc.github.io/AI_for_coding_2025/content/4_Code_Build_Practice.html">UBC Library Research Commons (2025). <em>Coding with ChatGPT</em></a>.</p>
 </div></aside></section>
+<section id="más-allá-del-chat-web-tres-formas-de-usar-un-llm" class="slide level2">
+<h2>Más allá del chat web: tres formas de usar un LLM</h2>
+<ol type="1">
+<li class="fragment"><strong>Chat web</strong> (Claude, ChatGPT en el navegador): ideal para explorar y conversar, pero no para analizar miles de textos.</li>
+<li class="fragment"><strong>API</strong>: el mismo modelo, llamado desde código. Permite automatizar y escalar, pero se paga por token.</li>
+<li class="fragment"><strong>Modelo local</strong>: un modelo abierto que corre en tu computador o en un servidor del laboratorio. <strong>Tus datos nunca salen de tu máquina.</strong></li>
+</ol>
+
+<aside><div>
+<p>Fuente: <a href="https://www.mjandrews.org/notes/text_analysis_with_llms/part1.html">Andrews, M. J. <em>Text analysis with LLMs, Part 1</em></a>.</p>
+</div></aside></section>
+<section id="por-qué-un-modelo-local-en-ciencia" class="slide level2">
+<h2>¿Por qué un modelo local en ciencia? 🔒</h2>
+<div style="font-size:0.6em">
+<table class="caption-top">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 22%">
+<col style="width: 34%">
+<col style="width: 28%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Chat web</th>
+<th>API</th>
+<th><strong>Local (Ollama)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Privacidad</td>
+<td>Van a un tercero</td>
+<td>Van a un tercero</td>
+<td><strong>Quedan en tu equipo</strong></td>
+</tr>
+<tr class="even">
+<td>Costo</td>
+<td>Suscripción</td>
+<td>Por token (puede sumar miles de US$)</td>
+<td><strong>Solo electricidad</strong></td>
+</tr>
+<tr class="odd">
+<td>Escala</td>
+<td>Texto a texto</td>
+<td>Alta, pero el costo crece</td>
+<td><strong>Alta, sin costo extra</strong></td>
+</tr>
+<tr class="even">
+<td>Requisito</td>
+<td>Un navegador</td>
+<td>Programar un poco</td>
+<td><strong>Buen hardware (GPU)</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="fragment" style="font-size:0.7em">
+<p>Para un comité de ética, analizar texto confidencial localmente es como analizar datos numéricos confidenciales en tu propio computador.</p>
+</div>
+
+<aside><div>
+<p>Fuente: <a href="https://www.mjandrews.org/notes/text_analysis_with_llms/part1.html">Andrews, M. J. <em>Text analysis with LLMs, Part 1</em></a>.</p>
+</div></aside></section>
+<section id="cómo-empezar-con-un-modelo-local" class="slide level2">
+<h2>Cómo empezar con un modelo local</h2>
+<ol type="1">
+<li class="fragment">Instala <a href="https://ollama.com">Ollama</a>: software libre para Windows, macOS y Linux que corre Llama, Mistral, Gemma, DeepSeek y otros modelos.</li>
+<li class="fragment">Descarga un modelo desde la terminal.</li>
+<li class="fragment">Úsalo desde R con el paquete <code>ellmer</code>, igual que un chat, pero sin internet.</li>
+</ol>
+<div class="columns">
+<div class="column" style="width:40%;">
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a></a><span class="ex">ollama</span> serve</span>
+<span id="cb2-2"><a></a><span class="ex">ollama</span> pull llama3.3</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column" style="width:60%;">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a><span class="fu">library</span>(ellmer)</span>
+<span id="cb3-2"><a></a>chat <span class="ot">&lt;-</span> <span class="fu">chat_ollama</span>(<span class="at">model =</span> <span class="st">"llama3.3"</span>,</span>
+<span id="cb3-3"><a></a>  <span class="at">system_prompt =</span> <span class="st">"Eres experta en ggplot2"</span>)</span>
+<span id="cb3-4"><a></a>chat<span class="sc">$</span><span class="fu">chat</span>(<span class="st">"Grafica el ingreso por comuna"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div></div>
+
+<aside><div>
+<p>Fuente: <a href="https://www.mjandrews.org/notes/text_analysis_with_llms/part1.html">Andrews, M. J. <em>Text analysis with LLMs, Part 1</em></a>. Llama 3.3 pesa ~43 GB; para equipos modestos prueba modelos más pequeños.</p>
+</div></aside></section>
 <section id="donde-contactarme" class="slide level2">
 <h2>Donde contactarme 👩🏽‍💻</h2>
 <ul>
@@ -469,7 +556,7 @@ Dra. Sara E. Acevedo <a href="https://orcid.org/0000-0003-3203-2106" class="quar
 </section>
 <section id="repositorio-del-taller" class="slide level2">
 <h2>Repositorio del taller</h2>
-<p>github.com/Saryace/ia-generativa-wids</p>
+<p><a href="github.com/Saryace/ia-generativa-wids">github.com/Saryace/ia-generativa-wids</a></p>
 
 
 </section></section>
