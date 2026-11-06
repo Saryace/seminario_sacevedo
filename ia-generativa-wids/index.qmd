@@ -295,6 +295,68 @@ glimpse(datos_sinteticos)
 Fuente: [UBC Library Research Commons (2025). *Coding with ChatGPT*](https://ubc-library-rc.github.io/AI_for_coding_2025/content/4_Code_Build_Practice.html).
 :::
 
+## Más allá del chat web: tres formas de usar un LLM
+
+::: {.incremental}
+1. **Chat web** (Claude, ChatGPT en el navegador): ideal para explorar y conversar, pero no para analizar miles de textos.
+2. **API**: el mismo modelo, llamado desde código. Permite automatizar y escalar, pero se paga por token.
+3. **Modelo local**: un modelo abierto que corre en tu computador o en un servidor del laboratorio. **Tus datos nunca salen de tu máquina.**
+:::
+
+::: aside
+Fuente: [Andrews, M. J. *Text analysis with LLMs, Part 1*](https://www.mjandrews.org/notes/text_analysis_with_llms/part1.html).
+:::
+
+## ¿Por qué un modelo local en ciencia? 🔒
+
+|               | Chat web               | API                                | **Local (Ollama)**        |
+|---------------|------------------------|------------------------------------|---------------------------|
+| Privacidad    | Datos van a un tercero | Datos van a un tercero             | **Quedan en tu equipo**   |
+| Costo         | Suscripción            | Por token, puede llegar a miles de US\$ | **Solo electricidad** |
+| Escala        | Manual, texto a texto  | Alta, pero el costo crece          | **Alta, sin costo extra** |
+| Requisito     | Un navegador           | Programar un poco                  | **Buen hardware (GPU)**   |
+
+: {tbl-colwidths="[16,24,32,28]" style="font-size:0.7em"}
+
+::: {.fragment}
+Para un comité de ética, analizar texto confidencial localmente es como analizar datos numéricos confidenciales en tu propio computador.
+:::
+
+::: aside
+Fuente: [Andrews, M. J. *Text analysis with LLMs, Part 1*](https://www.mjandrews.org/notes/text_analysis_with_llms/part1.html).
+:::
+
+## Cómo empezar con un modelo local
+
+::: {.incremental}
+1. Instala [Ollama](https://ollama.com): software libre para Windows, macOS y Linux que corre Llama, Mistral, Gemma, DeepSeek y otros modelos.
+2. Descarga un modelo desde la terminal.
+3. Úsalo desde R con el paquete `ellmer`, igual que un chat, pero sin internet.
+:::
+
+:::: {.columns}
+::: {.column width="40%"}
+```{.bash}
+ollama serve
+ollama pull llama3.3
+```
+:::
+::: {.column width="60%"}
+```{r}
+#| echo: true
+#| eval: false
+library(ellmer)
+chat <- chat_ollama(model = "llama3.3",
+  system_prompt = "Eres experta en ggplot2")
+chat$chat("Grafica el ingreso por comuna")
+```
+:::
+::::
+
+::: aside
+Fuente: [Andrews, M. J. *Text analysis with LLMs, Part 1*](https://www.mjandrews.org/notes/text_analysis_with_llms/part1.html). Llama 3.3 pesa ~43 GB; para equipos modestos prueba modelos más pequeños.
+:::
+
 ## Donde contactarme 👩🏽‍💻
 
 -   En instagram: *soilbiophysicsgirls*
