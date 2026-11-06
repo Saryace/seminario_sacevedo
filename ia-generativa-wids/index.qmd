@@ -360,6 +360,8 @@ chat$chat("Grafica el ingreso por comuna")
 Fuente: [Andrews, M. J. *Text analysis with LLMs, Part 1*](https://www.mjandrews.org/notes/text_analysis_with_llms/part1.html). Llama 3.3 pesa ~43 GB; para equipos modestos prueba modelos más pequeños.
 :::
 
+# [just because you charquican, doesn't mean you charquishould]{.r-fit-text style="color: white; font-size: 150px; background-color:#FFB302;"} {background-color="#40666e"}
+
 ## Donde contactarme 👩🏽‍💻
 
 -   En instagram: *soilbiophysicsgirls*
